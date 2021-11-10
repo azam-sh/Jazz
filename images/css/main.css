@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, a, a:active {
+  color: #232323;
+  font-family: "Gilroy-Regular";
+}
+.container {
+  max-width: 1170px;
+}
+.nav-menu {
+  margin-top: 35px;
+  margin-left: -30px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-item {
+  padding: 0 24px;
+}
+.nav-item:first-child {
+  padding-left: 0;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Gilroy-Semibold";
+}
+.link-group {
+  margin-top: 24px;
+}
+.link {
+  cursor: pointer;
+}
+.link-group {
+  display: flex;
+}
+.primary-link {
+  background: #27AE60;
+  box-shadow: 0px 4px 4px rgba(39, 174, 96, 0.2);
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+.user-link {
+  padding: 11px 17px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 2px;
+}
+.user-icon {
+  margin-right: 7px;
+}
+.cart-link {
+  background: transparent;
+  border: none;
+  margin-left: 30px;
+}
+.section-yellow {
+  background: url('/images/img/banner-background.png') no-repeat;
+  padding-top: 156px;
+  padding-bottom: 106px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.banner {
+  margin-top: 6px;
+}
+.banner-title {
+  font-family: "Gilroy-Extrabold";
+  font-weight: 599;
+  font-size: 72px;
+  line-height: 88px;
+  min-width: 110%;
+}
+.banner-subtitle {
+  font-family: "Gilroy-Bold";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 8px;
+}
+.banner-text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 15px;
+  max-width: 90%;
+}
+.banner-cards {
+  margin-top: 22px;
+  display: flex;
+}
+.banner-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+.banner-card:first-child {
+  margin-left: 0;
+}
+.banner-card-icon {
+  flex-basis: 1;
+}
+.banner-card-text {
+  margin-top: 10px;
+  font-family: "Gilroy-Semibold";
+}
+.banner-link {
+  display: flex;
+  justify-content: center;
+  font-family: "Gilroy-Bold";
+  max-width: 41%;
+  margin-top: 39px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-radius: 4px;
+}
+.banner-slider-image {
+  margin-top: -51px;
+}
+.brands {
+  margin-top: 29px;
+}
+.brand-title {
+  font-family: "Gilroy-Extrabold";
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+.brand-cards {
+  margin-top: 30px;
+  display: flex;
+}
+.brand-card:last-child {
+  margin-left: 30px;
+}
+.brand-card-header {
+  background: #FFFAF4;
+  border-radius: 2px;
+  padding: 41px 58px 30px 59px;
+}
+.brand-card-title {
+  font-family: "Gilroy-Bold";
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+}
+.brand-card-text {
+  text-align: -moz-center;
+  margin: auto;
+  margin-top: 6px;
+  max-width: 66%;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+.brand-cards-benefits {
+  display: flex;
+  margin-top: 19px;
+  justify-content: space-evenly;
+}
+.brand-card-benefit {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 121px;
+}
+.brand-card-text {
+  margin: auto;
+  margin-top: 9px;
+  text-align: center;
+}
+.brand-icon-text {
+  margin-top: 9px;
+  max-width: 95%;
+  text-align: center;
+}
+.brand-card-link {
+  display: flex;
+  justify-content: center;
+  max-width: 33%;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  margin-top: 28px;
+  border-radius: 4px;
+  font-family: "Gilroy-Semibold";
+}
+.promotion {
+  margin-top: 120px;
+}
+.promotion-title {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "Gilroy-Bold";
+  max-width: 83%;
+}
+.advantages-title {
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 38px;
+  color: #27AE60;
+  font-family: "Gilroy-Bold";
+}
+.advantages-info {
+  margin-top: 11px;
+}
+.advantage {
+  display: flex;
+  align-items: center;
+}
+.advantage:not(:first-child) {
+  margin-top: 20px;
+}
+.advantage-text {
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 70%;
+}
+.products-title {
+  text-align: center;
+  margin-top: 120px;
+  font-family: "Gilroy-Extrabold";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+}
+.product-cards {
+  margin-top: 32px;
+}
+.product-card-header {
+  background: #FFFAF4;
+  border-radius: 2px;
+  padding: 45px 48px;
+}
+.product-card-image {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-card-title {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy-Bold";
+  text-align: center;
+  max-width: 85%;
+}
+.product-dropdown {
+  display: flex;
+  margin-top: 18px;
+}
+.product-dropdown select {
+  min-width: 100%;
+  cursor: pointer;
+  border: 1px solid #DADCE0;
+  border-radius: 2px;
+  background: #fff;
+  padding: 13px;
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Roboto-Light";
+}
+.product-buy {
+  display: flex;
+  margin-top: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-text, .price {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.price {
+  margin-left: 5px;
+  font-family: "Gilroy-Bold";
+}
+.amount {
+  border: 1px solid #EDD6BF;
+  border-radius: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.num {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  opacity: 0.5;
+  font-family: "Roboto-Light";
+  margin: 15px 8px;
+}
+.minus {
+  margin-left: 9px;
+  display: flex;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.plus {
+  margin-right: 9px;
+  display: flex;
+  cursor: pointer;
+}
+.buy-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 33%;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
+  line-height: 18px;
+}
