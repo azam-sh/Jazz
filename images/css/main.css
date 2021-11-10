@@ -338,3 +338,109 @@ body, a, a:active {
   font-size: 14px;
   line-height: 18px;
 }
+.business {
+  margin-top: 120px;
+}
+.business-image {
+  margin-left: -185px;
+}
+.business-content {
+  margin-left: 62px;
+}
+.business-title {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "Gilroy-Extrabold";
+}
+.business-text {
+  margin-top: 9px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.business-tips {
+  margin-top: 24px;
+}
+.business-tip {
+  display: flex;
+}
+.business-tip:not(:first-child) {
+  margin-top: 20px;
+}
+.tip-text {
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.second-section-yellow {
+  background: url('/images/img/banner-background.png') no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 123px;
+  padding-bottom: 120px;
+}
+.success {
+  margin-top: 120px;
+}
+.success-title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  font-family: "Gilroy-Extrabold";
+}
+.success-cards {
+  display: flex;
+  margin-top: 30px;
+}
+.success-card {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+}
+.success-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  z-index: 2;
+  margin-top: 33px;
+  margin-bottom: 33px;
+  margin-left: 28px;
+  font-family: "Gilroy-Medium";
+}
+.success-icon {
+  margin-left: 33px;
+}
+.order-num {
+  z-index: 1;
+  color: #27AE60;
+  opacity: 0.1;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 26px;
+  font-family: "Gilroy-Bold";
+  position: absolute;
+  bottom: 28px;
+  right: 20px;
+  margin-right: 20px;
+}
+.success-link {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 20%;
+  box-shadow: 0px 4px 4px rgba(39, 174, 96, 0.2);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Gilroy-Bold";
+}
