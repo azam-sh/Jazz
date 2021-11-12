@@ -1,81 +1,83 @@
 @font-face {
-  font-family: "Gilroy-Regular";
-  font-style: normal;
-  font-weight: normal; 
-  src: url("../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.eot"),
-       url("../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.ttf"),
-       url("../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff"),
-       url("../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2");
-}
-@font-face {
-  font-family: "Gilroy-Bold";
-  font-style: normal;
-  font-weight: bold; 
-  src: url("../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.eot"),
-       url("../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.ttf"),
-       url("../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff"),
-       url("../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff2");
-}
-@font-face {
-  font-family: "Gilroy-Extrabold";
-  font-style: normal;
-  font-weight: normal; 
-  src: url("../fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.eot"),
-       url("../fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.ttf"),
-       url("../fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.woff"),
-       url("../fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.woff2");
-}
-@font-face {
   font-family: "Gilroy-Light";
+  font-weight: 200; 
   font-style: normal;
-  font-weight: normal; 
-  src: url("../fonts/Gilroy/Gilroy-Light/Gilroy-Light.eot"),
-       url("../fonts/Gilroy/Gilroy-Light/Gilroy-Light.ttf"),
-       url("../fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff"),
-       url("../fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff2");
+  src: url("/images/css/fonts/Gilroy/Gilroy-Light/Gilroy-Light.eot"),
+       url("/images/css/fonts/Gilroy/Gilroy-Light/Gilroy-Light.ttf"),
+       url("/images/css/fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff"),
+       url("/images/css/fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff2");
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-weight: 400; 
+  font-style: normal;
+  src: url("/images/css/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.eot"),
+       url("/images/css/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.ttf"),
+       url("/images/css/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff"),
+       url("/images/css/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2");
 }
 @font-face {
   font-family: "Gilroy-Medium";
+  font-weight: 500; 
   font-style: normal;
-  font-weight: normal; 
-  src: url("../fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.eot"),
-       url("../fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.ttf"),
-       url("../fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.woff"),
-       url("../fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.woff2");
+  src: url("/images/css/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.eot"),
+       url("/images/css/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.ttf"),
+       url("/images/css/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.woff"),
+       url("/images/css/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.woff2");
 }
 @font-face {
   font-family: "Gilroy-Semibold";
+  font-weight: 600; 
   font-style: normal;
-  font-weight: normal; 
-  src: url("../fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.eot"),
-       url("../fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.ttf"),
-       url("../fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.woff"),
-       url("../fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.woff2");
+  src: url("/images/css/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.eot"),
+       url("/images/css/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.ttf"),
+       url("/images/css/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.woff"),
+       url("/images/css/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.woff2");
 }
 @font-face {
-  font-family: "Roboto-Bold";
+  font-family: "Gilroy-Bold";
+  font-weight: 700; 
   font-style: normal;
-  font-weight: bold; 
-  src: url("../fonts/Roboto/Roboto-Bold/Roboto-Bold.eot"),
-       url("../fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf"),
-       url("../fonts/Roboto/Roboto-Bold/Roboto-Bold.woff"),
-       url("../fonts/Roboto/Roboto-Bold/Roboto-Bold.woff2");
+  src: url("/images/css/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.eot"),
+       url("/images/css/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.ttf"),
+       url("/images/css/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff"),
+       url("/images/css/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff2");
 }
+@font-face {
+  font-family: "Gilroy-Extrabold";
+  font-weight: 800; 
+  font-style: normal;
+  src: url("/images/css/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.eot"),
+       url("/images/css/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.ttf"),
+       url("/images/css/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.woff"),
+       url("/images/css/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.woff2");
+}
+
+
 @font-face {
   font-family: "Roboto-Light";
+  font-weight: 200; 
   font-style: normal;
-  font-weight: normal; 
-  src: url("../fonts/Roboto/Roboto-Light/Roboto-Light.eot"),
-       url("../fonts/Roboto/Roboto-Light/Roboto-Light.ttf"),
-       url("../fonts/Roboto/Roboto-Light/Roboto-Light.woff"),
-       url("../fonts/Roboto/Roboto-Light/Roboto-Light.woff2");
+  src: url("/images/css/fonts/Roboto/Roboto-Light/Roboto-Light.eot"),
+       url("/images/css/fonts/Roboto/Roboto-Light/Roboto-Light.ttf"),
+       url("/images/css/fonts/Roboto/Roboto-Light/Roboto-Light.woff"),
+       url("/images/css/fonts/Roboto/Roboto-Light/Roboto-Light.woff2");
 }
 @font-face {
   font-family: "Roboto-Medium";
+  font-weight: 500; 
   font-style: normal;
-  font-weight: normal; 
-  src: url("../fonts/Roboto/Roboto-Medium/Roboto-Medium.eot"),
-       url("../fonts/Roboto/Roboto-Medium/Roboto-Medium.ttf"),
-       url("../fonts/Roboto/Roboto-Medium/Roboto-Medium.woff"),
-       url("../fonts/Roboto/Roboto-Medium/Roboto-Medium.woff2");
+  src: url("/images/css/fonts/Roboto/Roboto-Medium/Roboto-Medium.eot"),
+       url("/images/css/fonts/Roboto/Roboto-Medium/Roboto-Medium.ttf"),
+       url("/images/css/fonts/Roboto/Roboto-Medium/Roboto-Medium.woff"),
+       url("/images/css/fonts/Roboto/Roboto-Medium/Roboto-Medium.woff2");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  font-weight: 700; 
+  font-style: normal;
+  src: url("/images/css/fonts/Roboto/Roboto-Bold/Roboto-Bold.eot"),
+       url("/images/css/fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf"),
+       url("/images/css/fonts/Roboto/Roboto-Bold/Roboto-Bold.woff"),
+       url("/images/css/fonts/Roboto/Roboto-Bold/Roboto-Bold.woff2");
 }

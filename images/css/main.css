@@ -18,11 +18,14 @@ body, a, a:active {
   list-style: none;
   display: flex;
 }
-.nav-item {
-  padding: 0 24px;
-}
 .nav-item:first-child {
   padding-left: 0;
+}
+.nav-item:not(:first-child):before {
+  content: '';  
+  border: 1px dashed #E0E0E0;
+  margin-right: 26px;
+  margin-left: 22px;
 }
 .nav-link {
   text-decoration: none;
@@ -63,6 +66,21 @@ body, a, a:active {
   background: transparent;
   border: none;
   margin-left: 30px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+.products-num {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
+  color: #fff;
+  background-color: #27AE60;
+  border-radius: 50%;
+  padding: 2px 6px;
+  position: absolute;
+  top: 3px;
+  right: -6px;
 }
 .section-yellow {
   background: url('/images/img/banner-background.png') no-repeat;
@@ -75,7 +93,6 @@ body, a, a:active {
 }
 .banner-title {
   font-family: "Gilroy-Extrabold";
-  font-weight: 599;
   font-size: 72px;
   line-height: 88px;
   min-width: 110%;
@@ -142,9 +159,6 @@ body, a, a:active {
   margin-top: 30px;
   display: flex;
 }
-.brand-card:last-child {
-  margin-left: 30px;
-}
 .brand-card-header {
   background: #FFFAF4;
   border-radius: 2px;
@@ -154,16 +168,13 @@ body, a, a:active {
   font-family: "Gilroy-Bold";
   text-align: center;
   margin-top: 30px;
-  font-weight: 800;
   font-size: 30px;
   line-height: 37px;
 }
 .brand-card-text {
   text-align: -moz-center;
-  margin: auto;
   margin-top: 6px;
   max-width: 66%;
-  font-weight: normal;
   font-size: 18px;
   line-height: 28px;
 }
@@ -203,6 +214,7 @@ body, a, a:active {
 }
 .promotion {
   margin-top: 120px;
+  padding-bottom: 120px;
 }
 .promotion-title {
   font-weight: 800;
@@ -238,14 +250,13 @@ body, a, a:active {
 }
 .products-title {
   text-align: center;
-  margin-top: 120px;
   font-family: "Gilroy-Extrabold";
   font-weight: 800;
   font-size: 36px;
   line-height: 44px;
 }
-.product-cards {
-  margin-top: 32px;
+.products {
+  padding-top: 32px;
 }
 .product-card-header {
   background: #FFFAF4;
@@ -253,7 +264,6 @@ body, a, a:active {
   padding: 45px 48px;
 }
 .product-card-image {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
@@ -341,11 +351,8 @@ body, a, a:active {
 .business {
   margin-top: 120px;
 }
-.business-image {
-  margin-left: -185px;
-}
 .business-content {
-  margin-left: 62px;
+  margin-left: 32px;
 }
 .business-title {
   font-weight: 800;
@@ -419,10 +426,9 @@ body, a, a:active {
   z-index: 1;
   color: #27AE60;
   opacity: 0.1;
-  font-weight: 800;
   font-size: 60px;
   line-height: 26px;
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy-Extrabold";
   position: absolute;
   bottom: 28px;
   right: 20px;
