@@ -214,7 +214,7 @@ body, a, a:active {
 .promotion-title {
   font-size: 28px;
   line-height: 36px;
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy-Extrabold";
   max-width: 83%;
 }
 .advantages-title {
@@ -364,6 +364,7 @@ body, a, a:active {
   margin-left: 20px;
   font-size: 16px;
   line-height: 24px;
+  font-family: "Gilroy-Light";
 }
 .second-section-yellow {
   background: url('/images/img/banner-background.png') no-repeat;
