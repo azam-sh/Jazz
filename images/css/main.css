@@ -6,6 +6,7 @@
 body, a, a:active {
   color: #232323;
   font-family: "Gilroy-Regular";
+  text-decoration: none;
 }
 .container {
   max-width: 1170px;
@@ -29,7 +30,6 @@ body, a, a:active {
 }
 .nav-link {
   font-family: "Gilroy-Semibold";
-  text-decoration: none;
   font-size: 14px;
   line-height: 17px;
 }
@@ -45,8 +45,8 @@ body, a, a:active {
 .primary-link {
   background: #27AE60;
   box-shadow: 0px 4px 4px rgba(39, 174, 96, 0.2);
+  border-radius: 4px;
   border: none;
-  text-decoration: none;
   color: #fff;
 }
 .user-link {
@@ -65,7 +65,6 @@ body, a, a:active {
   background: transparent;
   border: none;
   margin-left: 30px;
-  text-decoration: none;
   display: flex;
   position: relative;
 }
@@ -136,7 +135,6 @@ body, a, a:active {
   line-height: 18px;
   padding-top: 19px;
   padding-bottom: 19px;
-  border-radius: 4px;
 }
 .banner-slider-image {
   margin-top: -51px;
@@ -204,7 +202,6 @@ body, a, a:active {
   padding-bottom: 15px;
   margin: auto;
   margin-top: 28px;
-  border-radius: 4px;
   font-family: "Gilroy-Semibold";
 }
 .promotion {
@@ -330,7 +327,6 @@ body, a, a:active {
   padding-top: 15px;
   padding-bottom: 15px;
   min-width: 33%;
-  border-radius: 4px;
   font-family: "Gilroy-Bold";
   font-size: 14px;
   line-height: 18px;
@@ -426,9 +422,208 @@ body, a, a:active {
   padding-top: 15px;
   padding-bottom: 15px;
   max-width: 20%;
-  box-shadow: 0px 4px 4px rgba(39, 174, 96, 0.2);
-  border-radius: 4px;
   font-size: 14px;
   line-height: 18px;
   font-family: "Gilroy-Bold";
+}
+.reliability {
+  padding-top: 120px;
+  padding-bottom: 121px;
+}
+.reliability-title {
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Gilroy-Extrabold";
+  text-align: center;
+  margin: auto;
+  max-width: 65%;
+}
+.reliability-subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin: auto;
+  max-width: 59%;
+  margin-top: 17px;
+}
+.reliability-cards {
+  margin-top: 43px;
+}
+.reliability-card {
+  border: 1px solid #EDD6BF;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-top: 26px;
+}
+.reliability-card-left {
+  padding-left: 37px;
+  padding-right: 28px;
+}
+.reliability-card-right {
+  padding-left: 28px;
+  padding-right: 37px;
+}
+.reliability-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.reliability-card-left .reliability-card-text {
+  text-align: right;
+  margin-right: 22px;
+}
+.reliability-card-right .reliability-card-text {
+  margin-left: 22px;
+}
+.logo-lg {
+  display: flex;
+  margin: auto;
+}
+.reliability-link {
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 50%;
+  margin: auto;
+  margin-top: 30px;
+}
+.news-title {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  font-family: "Gilroy-Extrabold";
+}
+.news-cards {
+  padding-top: 30px;
+  padding-bottom: 130px;
+}
+.news-date {
+  font-size: 13px;
+  line-height: 13px;
+  margin-top: 22px;
+  font-family: "Gilroy-Light";
+}
+.news-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Gilroy-Bold";
+  margin-top: 12px;
+}
+.news-link {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 41px;
+  max-width: 50%;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Gilroy-Bold";
+}
+.footer {
+  background:url("/images/img/banner-background.png") no-repeat;
+}
+.footer-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-logo-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Gilroy-Bold";
+  margin-top: 19px;
+}
+.footer-information {
+  display: flex;
+  justify-content: space-around;
+}
+.information:before {
+  content: attr(label);
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Gilroy-Bold";
+}
+.information {
+  list-style: none;
+}
+.information-item {
+  margin-top: 10px;
+}
+.information-link {
+  font-size: 14px;
+  line-height: 18px;
+}
+.law-information:before {
+  content: attr(label);
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Gilroy-Bold";
+}
+.social-title {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Gilroy-Bold";
+}
+.social-media-links {
+  margin-top: 9px;
+}
+.social-media-link:last-child {
+  margin-left: 8px;
+}
+.phone-title {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Gilroy-Bold";
+}
+.phone-nums {
+  margin-top: 5px;
+}
+.phone-num {
+  font-size: 14px;
+  line-height: 18px;
+}
+.phone-link {
+  display: flex;
+  justify-content: center;
+  max-width: 60%;
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 2px;
+  font-family: "Gilroy-Semibold";
+}
+.bank-cards {
+  margin-top: 23px;
+}
+.footer-line {
+  border: 1px solid #EDD6BF;
+}
+.copyright {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright-text {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Gilroy-Light";
+}
+.made-by-text {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Gilroy-Light";
+}
+.devarto-link {
+  color: #27AE60;
+  font-family: "Gilroy-Semibold";
 }

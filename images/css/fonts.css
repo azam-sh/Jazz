@@ -3,19 +3,19 @@
   font-family: "Gilroy-Light";
   font-weight: 200; 
   font-style: normal;
-  src: url("/images/css/fonts/Gilroy/Gilroy-Light/Gilroy-Light.eot"),
-       url("/images/css/fonts/Gilroy/Gilroy-Light/Gilroy-Light.ttf"),
-       url("/images/css/fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff"),
-       url("/images/css/fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff2");
+  src: url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.eot"),
+       url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.ttf"),
+       url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff"),
+       url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff2");
 }
 @font-face {
   font-family: "Gilroy-Regular";
   font-weight: 400; 
   font-style: normal;
-  src: url("/images/css/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.eot"),
-       url("/images/css/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.ttf"),
-       url("/images/css/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff"),
-       url("/images/css/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2");
+  src: url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.eot"),
+       url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.ttf"),
+       url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff"),
+       url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2");
 }
 @font-face {
   font-family: "Gilroy-Medium";
