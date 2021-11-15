@@ -8,6 +8,10 @@ body, a, a:active {
   font-family: "Gilroy-Regular";
   text-decoration: none;
   overflow-x: hiiden;
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: #27AE60;
 }
 .container {
   max-width: 1170px;
@@ -49,6 +53,10 @@ body, a, a:active {
   border-radius: 4px;
   border: none;
   color: #fff;
+}
+.primary-link:hover {
+  color: #fff;
+  background-color: #1d8749;
 }
 .user-link {
   font-family: "Gilroy-Semibold";
@@ -267,8 +275,10 @@ body, a, a:active {
 .product-dropdown {
   display: flex;
   margin-top: 18px;
+  position: relative;
 }
-.product-dropdown select {
+.select {
+  appearance: none;
   min-width: 100%;
   cursor: pointer;
   border: 1px solid #DADCE0;
@@ -279,6 +289,15 @@ body, a, a:active {
   font-size: 12px;
   line-height: 14px;
   font-family: "Roboto-Light";
+}
+.product-dropdown:after {
+  content: ">";
+  color: #27AE60;
+  right: 1rem;
+  top: 0.7rem;
+  position: absolute;
+  transform: matrix(0, 1, 1.7, 0, 0, 0);
+  pointer-events: none;
 }
 .product-buy {
   display: flex;
@@ -587,7 +606,7 @@ body, a, a:active {
   font-size: 16px;
   line-height: 26px;
   font-family: "Gilroy-Bold";
-  margin-left: 3.5rem;
+  margin-left: 3.2rem;
 }
 .phone-nums {
   margin-top: 5px;
@@ -603,7 +622,7 @@ body, a, a:active {
   justify-content: center;
   max-width: 60%;
   margin-top: 15px;
-  margin-left: 3.5rem;
+  margin-left: 3.2rem;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 13px;
@@ -613,7 +632,7 @@ body, a, a:active {
 }
 .bank-cards {
   margin-top: 23px;
-  margin-left: 3.5rem;
+  margin-left: 3.2rem;
 }
 .footer-line {
   border: 1px solid #EDD6BF;

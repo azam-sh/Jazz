@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jazz</title>
   <link rel="stylesheet" href="/images/css/bootstrap-grid.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
   <link rel="stylesheet" href="/images/css/fonts.css">
   <link rel="stylesheet" href="/images/css/main.css">
 </head>
@@ -204,9 +207,9 @@
           </div>
           <!-- /.col-6 -->
           <div class="col-6">
-            <div class="promotion-video">
+            <a class="promotion-video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&t=1s" data-fancybox="video">
               <img src="/images/img/promotion-video.png" alt="Promotion video" class="promotion-video">
-            </div>
+            </a>
             <!-- /.promotion-video -->
           </div>
           <!-- /.col-6 -->
@@ -228,15 +231,15 @@
                   <div class="product-card-title offset-1">Свежеобжаренный Кофе Ethiopia Israel Degfa</div>
                 </div>
                 <!-- /.product-card-content -->
-                <span class="product-dropdown">
-                   <select>   
-                    <option>Масса: 250 гр. - 4 400 рублей</option>  
+                <div class="product-dropdown">
+                   <select class="select">   
+                    <option selected>Масса: 250 гр. - 4 400 рублей</option>  
                     <option>Масса: 250 гр. - 4 400 рублей</option>   
                     <option>Масса: 250 гр. - 4 400 рублей</option>  
                     <option>Масса: 250 гр. - 4 400 рублей</option>  
                     <option>Масса: 250 гр. - 4 400 рублей</option> 
                    </select> 
-                </span>
+                  </div>
                 <!-- /.product-dropdown -->
                 <div class="product-buy">
                   <span class="price-text">Цена:</span>
@@ -265,15 +268,15 @@
                   <div class="product-card-title offset-1">Свежеобжаренный Кофе Kenya Gathaithi AB</div>
                 </div>
                 <!-- /.product-card-content -->
-                <span class="product-dropdown">
-                  <select>   
-                   <option>Масса: 250 гр. - 4 800 рублей</option>  
+                <div class="product-dropdown">
+                  <select class="select">   
+                   <option selected>Масса: 250 гр. - 4 800 рублей</option>  
                    <option>Масса: 250 гр. - 4 800 рублей</option>   
                    <option>Масса: 250 гр. - 4 800 рублей</option>  
                    <option>Масса: 250 гр. - 4 800 рублей</option>  
                    <option>Масса: 250 гр. - 4 800 рублей</option> 
                   </select> 
-               </span>
+                </div>
                <!-- /.product-dropdown -->
                <div class="product-buy">
                 <span class="price-text">Цена:</span>
@@ -303,8 +306,8 @@
                 </div>
                 <!-- /.product-card-content -->
                 <div class="product-dropdown">
-                  <select>   
-                   <option>Масса: 250 гр. - 9 800 рублей</option>  
+                  <select class="select">   
+                   <option selected>Масса: 250 гр. - 9 800 рублей</option>  
                    <option>Масса: 250 гр. - 9 800 рублей</option>   
                    <option>Масса: 250 гр. - 9 800 рублей</option>  
                    <option>Масса: 250 гр. - 9 800 рублей</option>  
@@ -578,5 +581,6 @@
     </footer>
    </div>
    <!-- /.page-root -->
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
