@@ -7,6 +7,7 @@ body, a, a:active {
   color: #232323;
   font-family: "Gilroy-Regular";
   text-decoration: none;
+  overflow-x: hiiden;
 }
 .container {
   max-width: 1170px;
@@ -80,7 +81,7 @@ body, a, a:active {
   right: -6px;
 }
 .section-yellow {
-  background: url('/images/img/banner-background.png') no-repeat;
+  background: url('/images/img/banner-background.png') no-repeat center;
   padding-top: 156px;
   padding-bottom: 106px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -363,7 +364,7 @@ body, a, a:active {
   font-family: "Gilroy-Light";
 }
 .second-section-yellow {
-  background: url('/images/img/banner-background.png') no-repeat;
+  background: url('/images/img/banner-background.png') no-repeat center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-top: 123px;
   padding-bottom: 120px;
@@ -528,7 +529,7 @@ body, a, a:active {
   font-family: "Gilroy-Bold";
 }
 .footer {
-  background:url("/images/img/banner-background.png") no-repeat;
+  background:url("/images/img/banner-background.png") no-repeat center;
 }
 .footer-content {
   padding-top: 50px;
@@ -543,6 +544,7 @@ body, a, a:active {
 .footer-information {
   display: flex;
   justify-content: space-around;
+  margin-left: 3rem;
 }
 .information:before {
   content: attr(label);
@@ -551,6 +553,7 @@ body, a, a:active {
   font-family: "Gilroy-Bold";
 }
 .information {
+  margin-left: 1rem;
   list-style: none;
 }
 .information-item {
@@ -565,6 +568,9 @@ body, a, a:active {
   font-size: 16px;
   line-height: 26px;
   font-family: "Gilroy-Bold";
+}
+.social-media {
+  margin-left: 1.5rem;
 }
 .social-title {
   font-size: 16px;
@@ -581,9 +587,12 @@ body, a, a:active {
   font-size: 16px;
   line-height: 26px;
   font-family: "Gilroy-Bold";
+  margin-left: 3.5rem;
 }
 .phone-nums {
   margin-top: 5px;
+  display: flex;
+  justify-content: end;
 }
 .phone-num {
   font-size: 14px;
@@ -594,6 +603,7 @@ body, a, a:active {
   justify-content: center;
   max-width: 60%;
   margin-top: 15px;
+  margin-left: 3.5rem;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 13px;
@@ -603,6 +613,7 @@ body, a, a:active {
 }
 .bank-cards {
   margin-top: 23px;
+  margin-left: 3.5rem;
 }
 .footer-line {
   border: 1px solid #EDD6BF;
