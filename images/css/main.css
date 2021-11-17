@@ -94,8 +94,39 @@ a:hover {
   padding-bottom: 106px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.slider {
+  position: relative;
+}
+.slider-item {
+  overflow: hidden;
+  margin-right: 30px;
+}
 .banner {
   margin-top: 6px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 82%;
+  z-index: 10;
+  font-size: 0;
+  border: none;
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+}
+.slick-arrow.slick-prev {
+  background: url("/images/img/slider-prev.svg") no-repeat;
+  left: 56%;
+}
+.slick-arrow.slick-next {
+  background: url("/images/img/slider-next.svg") no-repeat;
+  left: 59%;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
 }
 .banner-title {
   font-family: "Gilroy-Extrabold";
