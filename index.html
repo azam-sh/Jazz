@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jazz</title>
   <link rel="stylesheet" href="/images/css/bootstrap-grid.min.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+  <link rel="stylesheet" href="/images/css/fancybox.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="/images/css/fonts.css">
   <link rel="stylesheet" href="/images/css/main.css">
+  <script src="/images/js/fancybox.umd.js" defer></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+  <script src="/images/js/script.js" defer></script>
 </head>
 <body>
    <div class="page-root">
@@ -27,7 +29,7 @@
                 <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">О продукции</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Магазин</a></li>
+                <li class="nav-item"><a href="/catalog.html" class="nav-link">Магазин</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Бизнес</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
@@ -54,135 +56,143 @@
     <main>
       <section class="banner section-yellow">
         <div class="container">
-          <div class="slider">
-            <div class="slider-item">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="banner-content">
-                    <h1 class="banner-title">Santos Coffee BR</h1>
-                    <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
-                    <p class="banner-text">Источник белка, аминокислот и витаминов, необходимых для ежедневного потребления</p>
-                    <div class="banner-cards">
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-1.svg" alt="banner-icon-1" class="banner-card-icon">
-                        <span class="banner-card-text">Поможет сжечь лишний жир</span>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="banner-content">
+                      <h1 class="banner-title">Santos Coffee BR</h1>
+                      <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
+                      <p class="banner-text">Источник белка, аминокислот и витаминов, необходимых для ежедневного потребления</p>
+                      <div class="banner-cards">
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-1.svg" alt="banner-icon-1" class="banner-card-icon">
+                          <span class="banner-card-text">Поможет сжечь лишний жир</span>
+                        </div>
+                        <!-- /.banner-card -->
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-2.svg" alt="banner-icon-2" class="banner-card-icon">
+                          <span class="banner-card-text">Увеличивает физическую работоспособность</span>
+                        </div>
+                        <!-- /.banner-card -->
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-3.svg" alt="banner-icon-3" class="banner-card-icon">
+                          <span class="banner-card-text">Успешно борется с депрессией</span>
+                        </div>
+                        <!-- /.banner-card -->
                       </div>
-                      <!-- /.banner-card -->
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-2.svg" alt="banner-icon-2" class="banner-card-icon">
-                        <span class="banner-card-text">Увеличивает физическую работоспособность</span>
-                      </div>
-                      <!-- /.banner-card -->
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-3.svg" alt="banner-icon-3" class="banner-card-icon">
-                        <span class="banner-card-text">Успешно борется с депрессией</span>
-                      </div>
-                      <!-- /.banner-card -->
+                      <!-- /.banner-cards -->
+                      <a href="#" class="banner-link primary-link">
+                        Подробнее о продукте
+                      </a>
                     </div>
-                    <!-- /.banner-cards -->
-                    <a href="#" class="banner-link primary-link">
-                      Подробнее о продукте
-                    </a>
+                    <!-- banner-content -->
                   </div>
-                  <!-- banner-content -->
-                </div>
-                <div class="col-md-6">
-                  <div class="banner-slider offset-2">
-                    <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
-                  </div>
-                  <!-- /.banner-slider -->
-                </div>
-                <!-- /.col-md-6 -->
-              </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.slider-item -->
-            <div class="slider-item">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="banner-content">
-                    <h1 class="banner-title">Santos Coffee BR</h1>
-                    <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
-                    <p class="banner-text">Источник белка, аминокислот и витаминов, необходимых для ежедневного потребления</p>
-                    <div class="banner-cards">
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-1.svg" alt="banner-icon-1" class="banner-card-icon">
-                        <span class="banner-card-text">Поможет сжечь лишний жир</span>
-                      </div>
-                      <!-- /.banner-card -->
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-2.svg" alt="banner-icon-2" class="banner-card-icon">
-                        <span class="banner-card-text">Увеличивает физическую работоспособность</span>
-                      </div>
-                      <!-- /.banner-card -->
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-3.svg" alt="banner-icon-3" class="banner-card-icon">
-                        <span class="banner-card-text">Успешно борется с депрессией</span>
-                      </div>
-                      <!-- /.banner-card -->
+                  <div class="col-md-6">
+                    <div class="banner-slider offset-2">
+                      <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
                     </div>
-                    <!-- /.banner-cards -->
-                    <a href="#" class="banner-link primary-link">
-                      Подробнее о продукте
-                    </a>
+                    <!-- /.banner-slider -->
                   </div>
-                  <!-- banner-content -->
+                  <!-- /.col-md-6 -->
                 </div>
-                <div class="col-md-6">
-                  <div class="banner-slider offset-2">
-                    <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
-                  </div>
-                  <!-- /.banner-slider -->
-                </div>
-                <!-- /.col-md-6 -->
+                <!-- /.row -->
               </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.slider-item -->
-            <div class="slider-item">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="banner-content">
-                    <h1 class="banner-title">Santos Coffee BR</h1>
-                    <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
-                    <p class="banner-text">Источник белка, аминокислот и витаминов, необходимых для ежедневного потребления</p>
-                    <div class="banner-cards">
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-1.svg" alt="banner-icon-1" class="banner-card-icon">
-                        <span class="banner-card-text">Поможет сжечь лишний жир</span>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="banner-content">
+                      <h1 class="banner-title">Santos Coffee BR</h1>
+                      <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
+                      <p class="banner-text">Источник белка, аминокислот и витаминов, необходимых для ежедневного потребления</p>
+                      <div class="banner-cards">
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-1.svg" alt="banner-icon-1" class="banner-card-icon">
+                          <span class="banner-card-text">Поможет сжечь лишний жир</span>
+                        </div>
+                        <!-- /.banner-card -->
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-2.svg" alt="banner-icon-2" class="banner-card-icon">
+                          <span class="banner-card-text">Увеличивает физическую работоспособность</span>
+                        </div>
+                        <!-- /.banner-card -->
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-3.svg" alt="banner-icon-3" class="banner-card-icon">
+                          <span class="banner-card-text">Успешно борется с депрессией</span>
+                        </div>
+                        <!-- /.banner-card -->
                       </div>
-                      <!-- /.banner-card -->
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-2.svg" alt="banner-icon-2" class="banner-card-icon">
-                        <span class="banner-card-text">Увеличивает физическую работоспособность</span>
-                      </div>
-                      <!-- /.banner-card -->
-                      <div class="banner-card">
-                        <img src="/images/img/banner-icon-3.svg" alt="banner-icon-3" class="banner-card-icon">
-                        <span class="banner-card-text">Успешно борется с депрессией</span>
-                      </div>
-                      <!-- /.banner-card -->
+                      <!-- /.banner-cards -->
+                      <a href="#" class="banner-link primary-link">
+                        Подробнее о продукте
+                      </a>
                     </div>
-                    <!-- /.banner-cards -->
-                    <a href="#" class="banner-link primary-link">
-                      Подробнее о продукте
-                    </a>
+                    <!-- banner-content -->
                   </div>
-                  <!-- banner-content -->
-                </div>
-                <div class="col-md-6">
-                  <div class="banner-slider offset-2">
-                    <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
+                  <div class="col-md-6">
+                    <div class="banner-slider offset-2">
+                      <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
+                    </div>
+                    <!-- /.banner-slider -->
                   </div>
-                  <!-- /.banner-slider -->
+                  <!-- /.col-md-6 -->
                 </div>
-                <!-- /.col-md-6 -->
+                <!-- /.row -->
               </div>
-              <!-- /.row -->
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="banner-content">
+                      <h1 class="banner-title">Santos Coffee BR</h1>
+                      <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
+                      <p class="banner-text">Источник белка, аминокислот и витаминов, необходимых для ежедневного потребления</p>
+                      <div class="banner-cards">
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-1.svg" alt="banner-icon-1" class="banner-card-icon">
+                          <span class="banner-card-text">Поможет сжечь лишний жир</span>
+                        </div>
+                        <!-- /.banner-card -->
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-2.svg" alt="banner-icon-2" class="banner-card-icon">
+                          <span class="banner-card-text">Увеличивает физическую работоспособность</span>
+                        </div>
+                        <!-- /.banner-card -->
+                        <div class="banner-card">
+                          <img src="/images/img/banner-icon-3.svg" alt="banner-icon-3" class="banner-card-icon">
+                          <span class="banner-card-text">Успешно борется с депрессией</span>
+                        </div>
+                        <!-- /.banner-card -->
+                      </div>
+                      <!-- /.banner-cards -->
+                      <a href="#" class="banner-link primary-link">
+                        Подробнее о продукте
+                      </a>
+                    </div>
+                    <!-- banner-content -->
+                  </div>
+                  <div class="col-md-6">
+                    <div class="banner-slider offset-2">
+                      <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
+                    </div>
+                    <!-- /.banner-slider -->
+                  </div>
+                  <!-- /.col-md-6 -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.swiper-slide -->
             </div>
-            <!-- /.slider-item -->
+            <!-- /.swiper-wrapper -->
+            <div class="swiper-buttons">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.swiper-buttons -->
           </div>
-          <!-- /.slider -->
+          <!-- /.swiper -->
         </div>
         <!-- /.container -->
       </section>
@@ -631,10 +641,10 @@
             <div class="social-media">
               <div class="social-title">Социальные сети</div>
               <div class="social-media-links">
-                <a href="#" class="social-media-link">
+                <a href="#" class="social-media-link" target="_blank">
                   <img src="/images/img/yt.svg" alt="Icon: YouTube" class="social-icon">
                 </a>
-                <a href="#" class="social-media-link">
+                <a href="#" class="social-media-link" target="_blank">
                   <img src="/images/img/inst.svg" alt="Icon: Instagram" class="social-icon">
                 </a>
               </div>
@@ -672,9 +682,5 @@
     </footer>
    </div>
    <!-- /.page-root -->
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="/images/js/slick.min.js"></script>
-   <script src="/images/js/script.js"></script>
 </body>
 </html>
