@@ -20,7 +20,6 @@ a:hover {
   padding-bottom:  22px;
 }
 .logo {
-  z-index: 99;
   position: absolute;
 }
 .nav-menu {
