@@ -16,11 +16,6 @@ a:hover {
 .container {
   max-width: 1170px;
 }
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
 .nav-menu {
   margin-top: 35px;
   margin-left: -30px;
