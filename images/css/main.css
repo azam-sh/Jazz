@@ -14,7 +14,7 @@ a:hover {
   color: #27AE60;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
 }
 .nav-menu {
   margin-top: 35px;
@@ -145,23 +145,28 @@ a:hover {
   padding-top: 19px;
   padding-bottom: 19px;
 }
-..banner-slider {
-  position: relative;
-}
 .banner-slider-image {
-  margin-top: -51px;
+  max-width: 100%;
 }
 .swiper-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 80%;
-  right: 45%;
+  left: 57%;
+  bottom: 12%;
+  z-index: 99;
+  max-width: 70px;
   border: 1px solid #fff;
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   border-radius: 36px;
 }
 .swiper-button-prev {
+  display: flex;
   left: 0;
+  position: relative;
+  margin-top: 0;
 }
 .swiper-button-prev:after {
   content: " ";
@@ -170,7 +175,11 @@ a:hover {
   width: 8px;
 }
 .swiper-button-next {
-  right: -70px;
+  display: flex;
+  right: 0px;
+  top: -1px;
+  position: relative;
+  margin-top: 0;
 }
 .swiper-button-next:after {
   content: " ";
