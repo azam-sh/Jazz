@@ -395,7 +395,7 @@ ul {
 .phone-nums {
   margin-top: 5px;
   display: flex;
-  justify-content: end;
+  margin-left: 52px;
 }
 .phone-num {
   font-size: 14px;
@@ -436,6 +436,7 @@ ul {
   font-size: 13px;
   line-height: 18px;
   font-family: "Gilroy-Light";
+  margin-right: 8px;
 }
 .devarto-link {
   color: #27AE60;

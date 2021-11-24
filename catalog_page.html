@@ -5,10 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jazz</title>
-  <link rel="stylesheet" href="/images/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="/images/bootstrap/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="/images/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="/images/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="/images/css/fonts.css">
-  <link rel="stylesheet" href="/images/css/catalog_page.css">
+  <link rel="stylesheet" href="/images/css/main.css">
+  <script src="/images/fancybox/fancybox.umd.js" defer></script>
+  <script src="/images/swiper/swiper-bundle.min.js" defer></script>
   <script src="/images/js/main.js" defer></script>
+  <script src="/images/js/script.js" defer></script>
 </head>
 <body>
   <div class="page-root">
@@ -72,19 +77,23 @@
           <div class="sidebar">
             <div class="sidebar-box sidebar-search">
               <span class="sidebar-text">Поиск</span>
+              <div class="sidebar-arrow sidebar-search-arrow">
+                <img src="/images/img/arrow.svg" alt="Icon: arrow" class="js-svg-img">
+              </div>
               <hr class="sidebar-line"> 
               <form>
                 <input class="search-input" placeholder="Что ищете?" type="search">
-                <span class="search-icon">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.8291 17.9752L13.9211 13.1457C15.2064 11.7494 15.9961 9.90267 15.9961 7.87056C15.9954 3.52349 12.4149 0 7.99772 0C3.58055 0 0 3.52349 0 7.87056C0 12.2176 3.58055 15.7411 7.99772 15.7411C9.90624 15.7411 11.6567 15.081 13.0317 13.9835L17.9586 18.8321C18.1987 19.0685 18.5884 19.0685 18.8285 18.8321C19.0691 18.5956 19.0691 18.2117 18.8291 17.9752ZM7.99772 14.5302C4.26031 14.5302 1.23056 11.5486 1.23056 7.87056C1.23056 4.19254 4.26031 1.21093 7.99772 1.21093C11.7352 1.21093 14.7649 4.19254 14.7649 7.87056C14.7649 11.5486 11.7352 14.5302 7.99772 14.5302Z" fill="#27AE60"/>
-                    </svg>                    
-                </span>
+                <div class="search-icon">
+                  <img src="/images/img/search-icon.svg" alt="Icon: search" class="js-svg-img">                   
+                </div>
               </form>
             </div>
             <!-- /.sidebar-box -->
             <div class="sidebar-box sidebar-price">
               <span class="sidebar-text">Цена (руб.)</span>
+              <div class="sidebar-arrow sidebar-price-arrow">
+                <img src="/images/img/arrow.svg" alt="Icon: arrow" class="js-svg-img">
+              </div>
               <hr class="sidebar-line"> 
               <div class="price-input-group">
                 <input type="text" placeholder="От 0" class = "price-input">

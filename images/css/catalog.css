@@ -219,6 +219,9 @@ ul {
 }
 .sidebar-item-text {
   margin-left: 18px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy-Semibold";
 }
 .catalog-card {
   display: flex;
@@ -231,11 +234,11 @@ ul {
   padding: 41px 58px 30px 59px;
 }
 .catalog-card-title {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy-Extrabold";
   text-align: center;
   margin-top: 30px;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 26px;
+  line-height: 32px;
 }
 .catalog-card-text {
   text-align: center;
@@ -243,7 +246,7 @@ ul {
   margin-top: 9px;
   margin-top: 6px;
   max-width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   margin-bottom: 19px;
 }
@@ -332,7 +335,7 @@ ul {
 .phone-nums {
   margin-top: 5px;
   display: flex;
-  justify-content: end;
+  margin-left: 52px;
 }
 .phone-num {
   font-size: 14px;
@@ -373,6 +376,7 @@ ul {
   font-size: 13px;
   line-height: 18px;
   font-family: "Gilroy-Light";
+  margin-right: 8px;
 }
 .devarto-link {
   color: #27AE60;

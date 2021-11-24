@@ -155,6 +155,7 @@ ul {
   position: absolute;
   top: 88px;
   right: 50px;
+  cursor: pointer;
 }
 .sidebar-box {
   display: flex;
@@ -175,14 +176,19 @@ ul {
   margin-bottom: 19px;
   position: relative;
 }
-.sidebar-text:after {
-  content: ">";
-  color: #27AE60;
-  right: 0.5rem;
-  top: 0.2rem;
+.sidebar-arrow {
+  cursor: pointer;
+  transform: rotate(90deg);
   position: absolute;
-  transform: matrix(0, 1, 1.7, 0, 0, 0);
-  pointer-events: none;
+  padding: 5px;
+}
+.sidebar-search-arrow {
+  top: 24px;
+  right: 39px;
+}
+.sidebar-price-arrow {
+  top: 177px;
+  right: 39px;
 }
 .sidebar-line {
   border: 1px solid #EDD6BF;
@@ -440,7 +446,7 @@ ul {
 .phone-nums {
   margin-top: 5px;
   display: flex;
-  justify-content: end;
+  margin-left: 52px;
 }
 .phone-num {
   font-size: 14px;
@@ -481,6 +487,7 @@ ul {
   font-size: 13px;
   line-height: 18px;
   font-family: "Gilroy-Light";
+  margin-right: 8px;
 }
 .devarto-link {
   color: #27AE60;
