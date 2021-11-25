@@ -20,10 +20,22 @@ ul {
   max-width: 1200px;
 }
 .header {
-  padding-bottom:  22px;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  position: fixed;
+  background-color: #fff;
+}
+.header.fixed {
+  box-shadow: 0 0 10px 4px #ededed;
 }
 .logo {
   position: absolute;
+}
+.logo-image.fixed {
+  max-height: 85px;
 }
 .nav-menu {
   margin-top: 35px;
@@ -95,6 +107,9 @@ ul {
   position: absolute;
   top: 3px;
   right: -6px;
+}
+.banner {
+  margin-top: 90px;
 }
 .section-yellow {
   background: url('/images/img/banner-background.png') no-repeat center;
@@ -226,7 +241,8 @@ ul {
 .catalog-card {
   display: flex;
   flex-direction: column; 
-  height: 100%;
+  height: calc(100% - 20px);
+  margin-top: 20px;
 }
 .catalog-card-header {
   background: #FFFAF4;

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	
+	// вывод svg в html
 	if($('.js-svg-img').length){
 		$('.js-svg-img').each(function(){
 			
@@ -33,34 +33,39 @@ $(document).ready(function(){
 			}, 'xml');
 		});
 	}
+
+	// инициализация слайдера
+	const swiper = new Swiper('.swiper', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
 	
-	
-	$('.js-title-height').matchHeight();
-	
-	
-	
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
 
-    let catalogSlider = $(".catalog__slider");
+	 // закрепление header
+	 const header = $(".header"); 
+	 const logoImg = $(".logo-image")
+	 let scrollPos = $(window).scrollTop(); 
 
-    catalogSlider.slick({
-        infinite: true, // если элементы заканчиваются - они повторяются заново
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        fade: false, // чтобы затемнялись отзывы
-        arrows: true,
-    });
+	 $(window).on("scroll load resize", function () {
+			 headerHeight = header.innerHeight();
+			 scrollPos = $(this).scrollTop();
 
-    let reviewsSlider = $(".reviews__slider");
+			 if (scrollPos > headerHeight) {
+					 header.addClass("fixed"); // 
+					 logoImg.addClass("fixed");
+			 } else {
+					 header.removeClass("fixed");
+					 logoImg.removeClass("fixed");  
+			 }
+	 });
 
-    reviewsSlider.slick({
-        infinite: true, // если элементы заканчиваются - они повторяются заново
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        fade: false, // чтобы затемнялись отзывы
-        arrows: true,
-        dots: true,
-    });
-
-
+	 // выпадение блоков
+	 
 
 });

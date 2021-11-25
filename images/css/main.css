@@ -9,12 +9,31 @@ body, a, a:active {
   text-decoration: none;
   overflow-x: hiiden;
   transition: all 0.4s ease;
+  background-color: #fff;
 }
 a:hover {
   color: #27AE60;
 }
 .container {
   max-width: 1200px;
+}
+.header {
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  position: fixed;
+  background-color: #fff;
+}
+.header.fixed {
+  box-shadow: 0 0 10px 4px #ededed;
+}
+.logo {
+  position: absolute;
+}
+.logo-image.fixed {
+  max-height: 85px;
 }
 .nav-menu {
   margin-top: 35px;
@@ -204,7 +223,8 @@ a:hover {
 .brand-card {
   display: flex;
   flex-direction: column; 
-  height: 100%;
+  height: calc(100% - 20px);
+  margin-top: 20px;
 }
 .brand-card-header {
   background: #FFFAF4;
@@ -241,6 +261,9 @@ a:hover {
   flex-wrap: wrap;
   flex-direction: column;
   max-width: 121px;
+}
+.card-benefit-image {
+  margin: auto;
 }
 .brand-icon-text {
   margin-top: 9px;
@@ -303,7 +326,8 @@ a:hover {
 .product-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% - 20px);
+  margin-top: 20px;
 }
 .product-card-header {
   background: #FFFAF4;
@@ -426,6 +450,10 @@ a:hover {
 .business-tip {
   display: flex;
 }
+.business-tip-image {
+  width: 40px;
+  height: 40px;
+}
 .business-tip:not(:first-child) {
   margin-top: 20px;
 }
@@ -470,7 +498,7 @@ a:hover {
   margin-left: 28px;
   font-family: "Gilroy-Medium";
 }
-.success-icon {
+.success-card-img {
   margin-left: 33px;
 }
 .order-num {
