@@ -9,58 +9,63 @@
   <link rel="stylesheet" href="/images/fancybox/fancybox.css"/>
   <link rel="stylesheet" href="/images/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="/images/css/fonts.css">
-  <link rel="stylesheet" href="/images/css/catalog_page.css">
+  <link rel="stylesheet" href="/images/noui-slider/nouislider.min.css">
+  <link rel="stylesheet" href="/images/css/main.css">
   <script src="/images/fancybox/fancybox.umd.js" defer></script>
   <script src="/images/swiper/swiper-bundle.min.js" defer></script>
   <script src="/images/jquery-ui/jquery-3.6.0.min.js" defer></script>
+  <script src="/images/noui-slider/nouislider.min.js" defer></script>
   <script src="/images/js/main.js" defer></script>
 </head>
 <body>
   <div class="page-root">
     <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <a href="/" class="logo">
-              <img src="/images/img/logo.png" alt="Logo: Jazz" class="logo-image" />
-            </a>
-          </div>
-           <div class="col-md-8">
-            <nav class="nav-menu">
-              <ul class="nav-list">
-                <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">О продукции</a></li>
-                <li class="nav-item"><a href="/catalog.html" class="nav-link">Магазин</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Бизнес</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
-              </ul>
-            </nav>
-           </div>
-          <div class="col-md-2">
-            <div class="link-group">
-              <a href = "#" class="user-link primary-link">
-                <img src="/images/img/user.svg" alt="Icon: User" class="js-svg-img">
-                Войти
-              </a>
-              <a href = "#" class="cart-link">
-                <img src="/images/img/cart.svg" alt="Icon: Cart" class="js-svg-img">
-                <span class="products-num">3</span>
+      <div class="header-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <a href="/" class="logo">
+                <img src="/images/img/logo.png" alt="Logo: Jazz" class="logo-image" />
               </a>
             </div>
-            <!-- /.link-group -->
+             <div class="col-md-8">
+              <nav class="nav-menu">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">О продукции</a></li>
+                  <li class="nav-item"><a href="/catalog.html" class="nav-link">Магазин</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Бизнес</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
+                </ul>
+              </nav>
+             </div>
+            <div class="col-md-2">
+              <div class="link-group">
+                <a href = "#" class="user-link primary-link">
+                  <img src="/images/img/user.svg" alt="Icon: User" class="js-svg-img">
+                  Войти
+                </a>
+                <a href = "#" class="cart-link">
+                  <img src="/images/img/cart.svg" alt="Icon: Cart" class="js-svg-img">
+                  <span class="products-num">3</span>
+                </a>
+              </div>
+              <!-- /.link-group -->
+            </div>
+            <!-- /.col-md-2 -->
           </div>
-          <!-- /.col-md-2 -->
+        <!-- /.row -->
         </div>
-      <!-- /.row -->
+        <!-- /.container -->
       </div>
-      <!-- /.container -->
+      <!-- /.header-fixed -->
     </header>
     <main>
-      <div class="section-yellow"></div>
+      <div class="second-section-yellow product-yellow"></div>
     <!-- /.section-yellow -->
-    <div class="bread container">
+    <div class="bread ct-bread container">
       <ul class="bread-ul">
         <li class="bread-li">
           <a href="/" class="bread-a">Главная</a>
@@ -79,7 +84,7 @@
         <div class="col-md-4">
           <div class="sidebar">
             <div class="sidebar-box sidebar-search">
-              <a href="#" class="sidebar-btn">
+              <a href="" class="sidebar-btn js-search-btn">
                 <span class="sidebar-text">Поиск</span>
                 <div class="sidebar-arrow sidebar-search-arrow">
                   <img src="/images/img/arrow.svg" alt="Icon: arrow" class="js-svg-img">
@@ -87,7 +92,7 @@
               </a>
               <!-- /.sidebar-btn -->
               <hr class="sidebar-line"> 
-              <form class="sidebar-form search-form">
+              <form class="sidebar-form js-search-form">
                 <input class="search-input" placeholder="Что ищете?" type="search">
                 <div class="search-icon">
                   <img src="/images/img/search-icon.svg" alt="Icon: search" class="js-svg-img">                   
@@ -96,7 +101,7 @@
             </div>
             <!-- /.sidebar-box -->
             <div class="sidebar-box sidebar-price">
-              <a href="#" class="sidebar-btn">
+              <a href="" class="sidebar-btn js-price-btn">
                 <span class="sidebar-text">Цена (руб.)</span>
                 <div class="sidebar-arrow sidebar-price-arrow">
                   <img src="/images/img/arrow.svg" alt="Icon: arrow" class="js-svg-img">
@@ -104,25 +109,22 @@
               </a>
               <!-- /.sidebar-btn -->
               <hr class="sidebar-line"> 
-              <div class="sidebar-form">
-                <div class="price-input-group">
-                  <input type="text" placeholder="От 0" class = "price-input">
-                  <span class="price-input-devider">-</span>
-                  <input type="text" placeholder="10 000" class = "price-input"> 
-                </div>
-                <!-- /.price-input-group -->
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="toggle min-toggle"></div>
-                    <div class="toggle max-toggle"></div>
-                </div>
-                <!-- /.range-controls -->
-                </div>
-                <!-- /.range-filter -->
-              </div>
+              <form class="sidebar-form js-price-form">
+                  <div class="price-input-group">
+                    <label class="price-input-label">
+                      <span class="price-input-text">от</span>
+                      <input type="number" min="0" max="10000" class = "price-input" id="input-0">
+                    </label>
+                    <span class="price-input-devider">-</span>
+                    <label class="price-input-label">
+                      <span class="price-input-text">до</span>
+                      <input type="number" min="0" max="10000" class = "price-input" id="input-1"> 
+                    </label>
+                  </div>
+                  <!-- /.price-input-group -->
+                  <div id="range-slider"></div>
+                <button type="submit" class="primary-link filter-btn">Применить</button>
+              </form>
               <!-- /.sidebar-form -->
             </div>
             <!-- /.sidebar-box -->
@@ -133,13 +135,13 @@
         <div class="col-md-8">
           <div class="row">
             <div class="col-md-6">
-              <div class="product-card">
+              <div class="product-card ct-product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-1.png" alt="Product-card-image" class="product-card-image">
                 </div>
                 <!-- /.product-card-header -->
                 <div class="product-card-title offset-1">Свежеобжаренный Кофе Ethiopia Israel Degfa</div>
-                <div class="product-wrapper">
+                <div class="product-wrapper ct-product-wrapper">
                   <div class="product-dropdown">
                     <select class="select">   
                      <option selected>Масса: 250 гр. - 4 400 рублей</option>  
@@ -170,13 +172,13 @@
             </div>
             <!-- /.col-md-6 -->
             <div class="col-md-6">
-              <div class="product-card">
+              <div class="product-card ct-product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-1.png" alt="Product-card-image" class="product-card-image">
                 </div>
                 <!-- /.product-card-header -->
                 <div class="product-card-title offset-1">Свежеобжаренный Кофе Ethiopia Israel Degfa</div>
-                <div class="product-wrapper">
+                <div class="product-wrapper ct-product-wrapper">
                   <div class="product-dropdown">
                     <select class="select">   
                      <option selected>Масса: 250 гр. - 4 400 рублей</option>  
@@ -207,13 +209,13 @@
             </div>
             <!-- /.col-md-6 -->
             <div class="col-md-6">
-              <div class="product-card">
+              <div class="product-card ct-product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-1.png" alt="Product-card-image" class="product-card-image">
                 </div>
                 <!-- /.product-card-header -->
                 <div class="product-card-title offset-1">Свежеобжаренный Кофе Ethiopia Israel Degfa</div>
-                <div class="product-wrapper">
+                <div class="product-wrapper ct-product-wrapper">
                   <div class="product-dropdown">
                     <select class="select">   
                      <option selected>Масса: 250 гр. - 4 400 рублей</option>  
@@ -244,13 +246,13 @@
             </div>
             <!-- /.col-md-6 -->
             <div class="col-md-6">
-              <div class="product-card">
+              <div class="product-card ct-product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-1.png" alt="Product-card-image" class="product-card-image">
                 </div>
                 <!-- /.product-card-header -->
                 <div class="product-card-title offset-1">Свежеобжаренный Кофе Ethiopia Israel Degfa</div>
-                <div class="product-wrapper">
+                <div class="product-wrapper ct-product-wrapper">
                   <div class="product-dropdown">
                     <select class="select">   
                      <option selected>Масса: 250 гр. - 4 400 рублей</option>  
@@ -281,13 +283,13 @@
             </div>
             <!-- /.col-md-6 -->
             <div class="col-md-6">
-              <div class="product-card">
+              <div class="product-card ct-product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-1.png" alt="Product-card-image" class="product-card-image">
                 </div>
                 <!-- /.product-card-header -->
                 <div class="product-card-title offset-1">Свежеобжаренный Кофе Ethiopia Israel Degfa</div>
-                <div class="product-wrapper">
+                <div class="product-wrapper ct-product-wrapper">
                   <div class="product-dropdown">
                     <select class="select">   
                      <option selected>Масса: 250 гр. - 4 400 рублей</option>  
@@ -318,13 +320,13 @@
             </div>
             <!-- /.col-md-6 -->
             <div class="col-md-6">
-              <div class="product-card">
+              <div class="product-card ct-product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-1.png" alt="Product-card-image" class="product-card-image">
                 </div>
                 <!-- /.product-card-header -->
                 <div class="product-card-title offset-1">Свежеобжаренный Кофе Ethiopia Israel Degfa</div>
-                <div class="product-wrapper">
+                <div class="product-wrapper ct-product-wrapper">
                   <div class="product-dropdown">
                     <select class="select">   
                      <option selected>Масса: 250 гр. - 4 400 рублей</option>  
@@ -354,21 +356,24 @@
               <!-- /.product-card -->
             </div>
             <!-- /.col-md-6 -->
-            <div class="pages-menu">
-              <div class="page-box">
-                <img src="images/img/arrow.svg" alt="Icon: arrow" class="js-svg-img">
+            <div class="col-md-12">
+              <div class="pages-menu">
+                <div class="page-box">
+                  <img src="images/img/arrow.svg" alt="Icon: arrow" class="js-svg-img">
+                </div>
+                <div class="page-box">1</div>
+                <div class="page-box active-page">2</div>
+                <div class="page-box">3</div>
+                <div class="dots page-box">...</div>
+                <div class="page-box">22</div>
+                <div class="page-box">23</div>
+                <div class="page-box">
+                  <img src="images/img/arrow.svg" alt="Icon: arrow" class="js-svg-img page-box-arrow-next">
+                </div>
               </div>
-              <div class="page-box">1</div>
-              <div class="page-box active">2</div>
-              <div class="page-box">3</div>
-              <div class="dots page-box">...</div>
-              <div class="page-box">22</div>
-              <div class="page-box">23</div>
-              <div class="page-box">
-                <img src="images/img/arrow.svg" alt="Icon: arrow" class="js-svg-img">
-              </div>
+              <!-- /.pages-menu -->
             </div>
-            <!-- /.pages-menu -->
+            <!-- /.col-md-12 -->
           </div>
           <!-- /.row -->
         </div>
@@ -383,7 +388,7 @@
       <div class="row">
         <div class="col-md-2">
           <div class="footer-logo">
-            <a href="/" class="footer-logo"><img src="/images/img/logo-footer.png" alt="Logo: Jazz" class="footer-logo-image"></a>
+            <a href="/" class="footer-logo-link"><img src="/images/img/logo-footer.png" alt="Logo: Jazz" class="footer-logo-image"></a>
             <div class="footer-logo-text">Jazz STORE - </br>Все лучшее людям!</div>
           </div>
           <!-- /.footer-logo -->

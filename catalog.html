@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/images/fancybox/fancybox.css"/>
   <link rel="stylesheet" href="/images/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="/images/css/fonts.css">
-  <link rel="stylesheet" href="/images/css/catalog.css">
+  <link rel="stylesheet" href="/images/css/main.css">
   <script src="/images/fancybox/fancybox.umd.js" defer></script>
   <script src="/images/swiper/swiper-bundle.min.js" defer></script>
   <script src="/images/jquery-ui/jquery-3.6.0.min.js" defer></script>
@@ -18,48 +18,51 @@
 <body>
   <div class="page root">
     <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <a href="/" class="logo">
-              <img src="/images/img/logo.png" alt="Logo: Jazz" class="logo-image" />
-            </a>
-          </div>
-           <div class="col-md-8">
-            <nav class="nav-menu">
-              <ul class="nav-list">
-                <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">О продукции</a></li>
-                <li class="nav-item"><a href="/catalog.html" class="nav-link">Магазин</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Бизнес</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
-              </ul>
-            </nav>
-           </div>
-          <div class="col-md-2">
-            <div class="link-group">
-              <a href = "#" class="user-link primary-link">
-                <img src="/images/img/user.svg" alt="Icon: User" class="js-svg-img">
-                Войти
-              </a>
-              <a href = "#" class="cart-link">
-                <img src="/images/img/cart.svg" alt="Icon: Cart" class="js-svg-img">
-                <span class="products-num">3</span>
+      <div class="header-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <a href="/" class="logo">
+                <img src="/images/img/logo.png" alt="Logo: Jazz" class="logo-image" />
               </a>
             </div>
-            <!-- /.link-group -->
+             <div class="col-md-8">
+              <nav class="nav-menu">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">О продукции</a></li>
+                  <li class="nav-item"><a href="/catalog.html" class="nav-link">Магазин</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Бизнес</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
+                </ul>
+              </nav>
+             </div>
+            <div class="col-md-2">
+              <div class="link-group">
+                <a href = "#" class="user-link primary-link">
+                  <img src="/images/img/user.svg" alt="Icon: User" class="js-svg-img">
+                  Войти
+                </a>
+                <a href = "#" class="cart-link">
+                  <img src="/images/img/cart.svg" alt="Icon: Cart" class="js-svg-img">
+                  <span class="products-num">3</span>
+                </a>
+              </div>
+              <!-- /.link-group -->
+            </div>
+            <!-- /.col-md-2 -->
           </div>
-          <!-- /.col-md-2 -->
+        <!-- /.row -->
         </div>
-      <!-- /.row -->
+        <!-- /.container -->
       </div>
-      <!-- /.container -->
+      <!-- /.header-fixed -->
     </header>
     <main>
       <section class="banner">
-        <div class="section-yellow">
+        <div class="second-section-yellow catalog-yellow">
           <div class="container">
             <div class="swiper">
               <div class="swiper-wrapper">
@@ -78,7 +81,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="banner-slider">
-                        <img src="/images/img/swiper-catalog-img.png" alt="swiper-catalog-image" class="swiper-catalog-img">
+                        <img src="/images/img/swiper-catalog-img.png" alt="swiper-catalog-image" class="banner-slider-image">
                       </div>
                       <!-- /.banner-slider -->
                     </div>
@@ -102,7 +105,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="banner-slider">
-                        <img src="/images/img/swiper-catalog-img.png" alt="banner-slider-image" class="swiper-catalog-img">
+                        <img src="/images/img/swiper-catalog-img.png" alt="banner-slider-image" class="banner-slider-image">
                       </div>
                       <!-- /.banner-slider -->
                     </div>
@@ -126,7 +129,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="banner-slider">
-                        <img src="/images/img/swiper-catalog-img.png" alt="banner-slider-image" class="swiper-catalog-img">
+                        <img src="/images/img/swiper-catalog-img.png" alt="banner-slider-image" class="banner-slider-image">
                       </div>
                       <!-- /.banner-slider -->
                     </div>
@@ -236,7 +239,7 @@
       <div class="row">
         <div class="col-md-2">
           <div class="footer-logo">
-            <a href="/" class="footer-logo"><img src="/images/img/logo-footer.png" alt="Logo: Jazz" class="footer-logo-image"></a>
+            <a href="/" class="footer-logo-link"><img src="/images/img/logo-footer.png" alt="Logo: Jazz" class="footer-logo-image"></a>
             <div class="footer-logo-text">Jazz STORE - </br>Все лучшее людям!</div>
           </div>
           <!-- /.footer-logo -->
