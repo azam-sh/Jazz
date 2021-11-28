@@ -29,6 +29,12 @@ $(document).ready(function(){
 		});
 	}
 
+	// кнопка copy
+	$('#js-copy').on('click', function() {
+		$('#js-text').select();
+		document.exeCommand('copy');
+	});
+	
 	// инициализация слайдера
 	const swiper = new Swiper('.swiper', {
 		// Optional parameters
