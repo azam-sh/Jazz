@@ -594,6 +594,11 @@ input[type=number] {
 .pr-product-card {
   padding-bottom: 80px;
 }
+.product-image-wrapper {
+  background: #FFFAF4;
+  border-radius: 2px;
+  padding: 66px 83px;
+}
 .ct-product-card {
   margin-top: 0;
 }
