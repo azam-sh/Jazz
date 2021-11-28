@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="/images/bootstrap/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="/images/bootstrap/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="/images/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="/images/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/images/css/fonts.css">
+  <link rel="stylesheet" href="/images/css/main.css">
+  <script src="/images/fancybox/fancybox.umd.js" defer></script>
+  <script src="/images/swiper/swiper-bundle.min.js" defer></script>
+  <script src="/images/jquery-ui/jquery-3.6.0.min.js" defer></script>
+  <script src="/images/js/main.js" defer></script>
+</head>
+<body>
+  <div class="page-root">
+    <header class="header">
+      <div class="header-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <a href="/" class="logo">
+                <img src="/images/img/logo.png" alt="Logo: Jazz" class="logo-image" />
+              </a>
+            </div>
+             <div class="col-md-8">
+              <nav class="nav-menu">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">О продукции</a></li>
+                  <li class="nav-item"><a href="/catalog.html" class="nav-link">Магазин</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Бизнес</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
+                </ul>
+              </nav>
+             </div>
+            <div class="col-md-2">
+              <div class="link-group">
+                <a href = "#" class="user-link primary-link">
+                  <img src="/images/img/user.svg" alt="Icon: User" class="js-svg-img">
+                  Войти
+                </a>
+                <a href = "#" class="cart-link">
+                  <img src="/images/img/cart.svg" alt="Icon: Cart" class="js-svg-img">
+                  <span class="products-num">3</span>
+                </a>
+              </div>
+              <!-- /.link-group -->
+            </div>
+            <!-- /.col-md-2 -->
+          </div>
+        <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.header-fixed -->
+    </header>
+    <main>
+      <div class="second-section-yellow product-yellow"></div>
+    <!-- /.section-yellow -->
+    <div class="bread container">
+      <ul class="bread-ul">
+        <li class="bread-li">
+          <a href="/" class="bread-a">Главная</a>
+        </li>
+        <li class="bread-li">
+          <span class="grey">Каталог продукции</span>
+        </li>
+      </ul>
+      <!-- /.bread-ul -->
+    </div>
+    <!-- /.bread -->
+    <div class="container">
+      <h1 class="cart-title">Корзина</h1>
+    </div>
+    <div class="container">
+      <div class="cart-table">
+        <div class="row">
+          <div class="col-md-2">
+            <a href="#" class="cart-img-link">
+              <img src="/images/img/cart-img.jpg" alt="Cart-image" class="cart-img">
+            </a>
+          </div>
+          <!-- /.col-md-2 -->
+          <div class="col-md-3">
+            <div class="cart-info">
+              <div class="cart-info-title">Columbia Andino</div>
+              <div class="cart-info-text">
+                Обжарка : средняя; 
+                <br/>
+                Помол : в зернах;
+                <br/>
+                Масса : 250 гр;
+                <br/>
+              </div>
+            </div>
+            <!-- /.cart-info -->
+          </div>
+          <!-- /.col-md-3 -->
+          <div class="col-md-2">
+            <div class="cart-price">
+              <span class="cart-price-num">360.00</span>
+              <span class="cart-price-symbol">₽</span>
+            </div>
+            <!-- /.cart-price -->
+          </div>
+          <!-- /.col-md-2 -->
+          <div class="col-md-2">
+            <div class="amount cart-amount">
+              <div class="minus pr"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
+              <div class="cart-num">1</div>
+              <div class="plus pr"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
+            </div>
+            <!-- /.amount -->
+          </div>
+          <!-- /.col-md-2 -->
+          <div class="col-md-2">
+            <div class="total-price">
+              <span class="cart-price-num">360.00</span>
+              <span class="cart-price-symbol">₽</span>
+            </div>
+            <!-- /.total-price -->
+          </div>
+          <!-- /.col-md-2 -->
+          <div class="col-md-1">
+            <form>
+              <button class="cancel-btn">
+                <img src="/images/img/cancel.svg" alt="Icon: cancel" class="cancel-icon">
+              </button>
+            </form>
+          </div>
+          <!-- /.col-md-1 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.cart-table -->
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-md-9"></div>
+        <!-- /.col-md-9 -->
+        <div class="col-md-2">
+          Итого:
+          <span class="cart-price-num">360.00</span>
+          <span class="cart-price-symbol">₽</span>
+        </div>
+        <!-- /.col-md-2 -->
+        <div class="col-md-1">
+        </div>
+        <!-- /.col-md-1 -->
+      </div>
+      <!-- /.row -->
+      <br/>
+      <br/>
+      <div class="row justify-content-end">
+        <div class="col-md-3">
+          <a href="#" class="buy-link ct-link primary-link">Продолжить</a>
+        </div>
+        <!-- /.col-md-3 -->
+      </div>
+      <!-- /.row justify-content-end -->
+    </div>
+    <br/>
+    <br/>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="footer-logo">
+            <a href="/" class="footer-logo-link"><img src="/images/img/logo-footer.png" alt="Logo: Jazz" class="footer-logo-image"></a>
+            <div class="footer-logo-text">Jazz STORE - </br>Все лучшее людям!</div>
+          </div>
+          <!-- /.footer-logo -->
+        </div>
+        <!-- /.col-md-2 -->
+        <div class="col-md-5">
+          <div class="footer-information">
+            <ul label="Информация" class="information">
+              <li class="information-item"><a href="#" class="information-link">О нас</a></li>
+              <li class="information-item"><a href="#" class="information-link">О продукции</a></li>
+              <li class="information-item"><a href="#" class="information-link">Новости</a></li>
+              <li class="information-item"><a href="#" class="information-link">Магазин</a></li>
+              <li class="information-item"><a href="#" class="information-link">Бизнес</a></li>
+            </ul>
+            <ul label="Юр. Информация" class="law-information information">
+              <li class="information-item"><a href="#" class="information-link">Политика конфиденциальности</a></li>
+              <li class="information-item"><a href="#" class="information-link">Правовая информация</a></li>
+            </ul>
+          </div> 
+        </div>
+        <!-- /.col-md-5 -->
+        <div class="col-md-2">
+            <div class="social-media">
+              <div class="social-title">Социальные сети</div>
+              <div class="social-media-links">
+                <a href="#" class="social-media-link" target="_blank">
+                  <img src="/images/img/yt.svg" alt="Icon: YouTube" class="js-svg-img">
+                </a>
+                <a href="#" class="social-media-link" target="_blank">
+                  <img src="/images/img/inst.svg" alt="Icon: Instagram" class="js-svg-img">
+                </a>
+              </div>
+            </div>
+            <!-- /.social-media -->
+        </div>
+        <!-- /.col-md-2 -->
+        <div class="col-md-3">
+          <div class="phone">
+            <div class="phone-title">Контакты</div>
+            <div class="phone-nums">
+              <a href="tel: 88008989889" class="phone-num">8 800 898 98 89,</a>
+              <a href="tel: +74998989889" class="phone-num">&nbsp +7 499 989 98 89</a>
+            </div>
+            <!-- /.phone-nums -->
+          </div>
+          <!-- /.phone-num -->
+          <a href="#" class="phone-link primary-link">Связать с нами</a>
+          <div class="bank-cards">
+            <img src="/images/img/mastercard.svg" alt="Icon: MasterCard" class="js-svg-img">
+            <img src="/images/img/visa.svg" alt="Icon: Visa" class="js-svg-img">
+          </div>
+          <!-- /.bank-cards -->
+        </div>
+        <!-- /.col-md-3 -->
+      </div>
+      <!-- /.row -->    
+      </div>
+      <!-- /.footer-content -->
+      <hr class="footer-line">
+      <div class="copyright container">
+        <span class="copyright-text">© 2016-2020. Jazz STORE. Все права защищены</span>
+        <span class="made-by-text">Разработка сайта - <a href="https://devarto.ru/" target="_blank" class="devarto-link">Devarto.ru</a></span>
+      </div> 
+    </footer>
+  </div>
+</body>
+</html>

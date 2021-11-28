@@ -540,6 +540,89 @@ input[type=number] {
   padding-bottom: 15px;
   font-family: "Gilroy-Semibold";
 }
+.cart-table {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.cart-title {
+  font-size: 36px;
+  font-family: "Gilroy-Extrabold";
+  margin-bottom: 30px;
+}
+.cart-info-title {
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+}
+.cart-info-text {
+  font-size: 12px;
+  font-family: "Gilroy-Light";
+}
+.cart-price-num,
+.cart-price-symbol {
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+}
+.buy-link.ct-link {
+  width: 100%;
+}
+.cart-amount {
+  max-width: 65%;
+}
+.cart-num {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  font-family: "Roboto-Light";
+}
+.cancel-btn {
+  width: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.table {
+  border: 1px solid #eceeef;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  background-color: transparent;
+  font-size: 18px;
+}
+.table td {
+  padding: .75rem;
+  vertical-align: top;
+  border: 1px solid #eceeef;
+}
+.order-num {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  font-size: 12px;
+}
+.condition {
+  font-size: 16px;
+}
+.condition-link {
+  font-family: "Gilroy-Bold";
+  color: #27ae60;
+}
+.condition-link:hover {
+  color: #1d8749;
+}
+.total-box {
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.total-box-title {
+  font-size: 18px;
+  color: #27ae60;
+  font-family: "Gilroy-Bold";
+}
+.total-box-num {
+  margin-top: 20px;
+}
 .card-link-wrapper {
   margin-top: auto;
 }
@@ -857,7 +940,7 @@ input[type=number] {
   margin-left: 33px;
   flex: 0 0 45px;
 }
-.order-num {
+.success-card-num {
   z-index: 1;
   color: #27AE60;
   opacity: 0.1;
