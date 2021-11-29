@@ -35,7 +35,7 @@ $(document).ready(function(){
 		document.exeCommand('copy');
 	});
 	
-	// инициализация слайдера
+	// инициализация слайдера swiper js
 	const swiper = new Swiper('.swiper', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -46,6 +46,22 @@ $(document).ready(function(){
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+	});
+
+	// слайдер slick js
+	$('.img-slider').slick({
+		infinite: false,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		asNavFor: '.second-slider'
+	});
+	$('.second-slider').slick({
+		infinite: false,
+		slidesToShow: 4,
+		slidesToSctoll: 1,
+		focusOnSelect: true,
+		asNavFor: '.img-slider'
 	});
 
 	 // закрепление header

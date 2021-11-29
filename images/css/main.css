@@ -682,6 +682,23 @@ input[type=number] {
   border-radius: 2px;
   padding: 66px 83px;
 }
+.second-slider {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-slider-item:not(:last-child) {
+  margin-right: 8px;
+}
+.item-wrapper {
+  padding: 18px 22px;
+  background: #FFFAF4;
+  border-radius: 2px;
+}
+.second-slider .slick-current {
+  border: 1px solid #27AE60;
+}
 .ct-product-card {
   margin-top: 0;
 }
