@@ -688,6 +688,36 @@ input[type=number] {
   justify-content: center;
   align-items: center;
 }
+.slick-next {
+  right: -82px;
+  top: 431px;
+  z-index: 9;
+}
+.slick-prev {
+  left: -84px;
+  top: 431px;
+  z-index: 9;
+}
+.slick-prev.slick-disabled::before, .slick-next.slick-disabled::before {
+  opacity: 1;
+}
+.slick-next::before {
+  content: " ";
+  display: block;
+  background: url('/images/img/slider-next.svg') no-repeat;
+  height: 23px; 
+  width: 25px;
+}
+.slick-prev::before {
+  content: " ";
+  display: block;
+  background: url('/images/img/slider-prev.svg') no-repeat;
+  height: 23px; 
+  width: 25px;
+}
+.second-slider .slick-track, .slick-slider .slick-list {
+  left: 0 !important;
+}
 .second-slider-item:not(:last-child) {
   margin-right: 8px;
 }

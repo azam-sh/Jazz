@@ -53,7 +53,7 @@ $(document).ready(function(){
 		infinite: false,
 		slidesToScroll: 1,
 		fade: true,
-		arrows: false,
+		arrows: true,
 		asNavFor: '.second-slider'
 	});
 	$('.second-slider').slick({
@@ -61,6 +61,7 @@ $(document).ready(function(){
 		slidesToShow: 4,
 		slidesToSctoll: 1,
 		focusOnSelect: true,
+		useTransform: false,
 		asNavFor: '.img-slider'
 	});
 
