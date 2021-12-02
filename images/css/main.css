@@ -15,8 +15,14 @@ ul, ol {
 a:hover {
   color: #27AE60;
 }
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
 .container {
   max-width: 1200px;
+  width: 100%;
 }
 .header {
   width: 100%;
@@ -38,6 +44,13 @@ a:hover {
 .header-fixed.active .logo-image {
   height: 85px;
 }
+.header-burger {
+  display: none;
+  cursor: pointer;
+}
+.burger-menu {
+  display: none;
+}
 .logo-image {
   position: absolute;
   transition: all 0.4s ease;
@@ -57,7 +70,7 @@ a:hover {
 .nav-item:not(:first-child):before {
   content: '';  
   border: 1px dashed #E0E0E0;
-  margin-right: 26px;
+  margin-right: 22px;
   margin-left: 22px;
 }
 .nav-link {
@@ -66,13 +79,13 @@ a:hover {
   line-height: 17px;
 }
 .link-group {
+  display: flex;
   margin-top: 24px;
+  align-items: center;
+  justify-content: space-between;
 }
 .link {
   cursor: pointer;
-}
-.link-group {
-  display: flex;
 }
 .primary-link {
   background: #27AE60;
@@ -86,23 +99,27 @@ a:hover {
   background-color: #1d8749;
 }
 .user-link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-family: "Gilroy-Semibold";
-  padding: 11px 17px;
+  width: 100px;
+  min-height: 40px;
+  padding: 4px;
   display: flex;
   align-items: center;
   font-size: 13px;
   line-height: 18px;
-  border-radius: 2px;
-}
-.user-icon {
-  margin-right: 7px;
+  border-radius: 4px;
 }
 .cart-link {
   background: transparent;
   border: none;
-  margin-left: 30px;
   display: flex;
   position: relative;
+}
+.user-icon {
+  margin-right: 6px;
 }
 .products-num {
   font-size: 11px;
@@ -110,9 +127,9 @@ a:hover {
   color: #fff;
   background-color: #27AE60;
   border-radius: 50%;
-  padding: 2px 6px;
+  padding: 4px 7px;
   position: absolute;
-  top: 3px;
+  top: -4px;
   right: -6px;
 }
 .section-yellow {
@@ -272,7 +289,15 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  transform: none;
+}
+.sidebar-btn:hover {
+  color: #27ae60;
+  transition: all 0.4s ease;
+}
+.price-arrow-active,
+.search-arrow-active {
+  transform: rotate(90deg) !important;
+  transition: all 0.4s ease;
 }
 .sidebar-box {
   display: flex;
@@ -356,6 +381,7 @@ input[type=number] {
   box-shadow: none;
   border-radius: 100%;
   border: 5px solid #109347;
+  cursor: pointer;
 }
 .noUi-horizontal .noUi-handle {
   width: 17px;
@@ -418,16 +444,16 @@ input[type=number] {
   font-family: "Gilroy-Semibold";
 }
 .brands {
-  margin-top: 29px;
+  padding-top: 30px;
 }
 .brand-title {
   font-family: "Gilroy-Extrabold";
   font-size: 36px;
   line-height: 44px;
+  margin-top: 35px;
   text-align: center;
 }
 .brand-cards {
-  margin-top: 30px;
   display: flex;
 }
 .catalog-page-title {
@@ -448,8 +474,7 @@ input[type=number] {
 .brand-card {
   display: flex;
   flex-direction: column; 
-  height: calc(100% - 20px);
-  margin-top: 20px;
+  height: 100%;
 }
 .brand-card-header {
   background: #FFFAF4;
@@ -526,7 +551,6 @@ input[type=number] {
 }
 .brand-icon-text {
   margin-top: 9px;
-  max-width: 95%;
   text-align: center;
 }
 .brand-card-link {
@@ -635,6 +659,9 @@ input[type=number] {
   line-height: 36px;
   font-family: "Gilroy-Extrabold";
   max-width: 83%;
+}
+.promotion-video {
+  display: block;
 }
 .advantages-title {
   margin-top: 6px;
@@ -797,21 +824,62 @@ input[type=number] {
   line-height: 16px;
   font-family: "Gilroy-Bold";
 }
+.copy-text {
+  display: flex;
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #DADCE0;
+  min-width: 100%;
+  margin-top: 12px;
+}
 .referral-link {
   min-width: 100%;
   padding-left: 13px;
-  margin-top: 12px;
   padding-top: 17px;
   padding-bottom: 17px;
   color: #434343;
-  border: 1px solid #DADCE0;
   opacity: 0.5;
+  border: none;
+  font-size: 12px;
+  line-height: 14px;
+  outline: none;
 }
 .copy-icon {
   position: absolute;
+  border: none;
+  background: transparent;
+  outline: none;
   right: 11px;
   top: 44px;
   cursor: pointer;
+}
+.copy-icon:before {
+  content: "Скопировано";
+  position: absolute;
+  background: #27ae60;
+  border-radius: 20px;
+  padding: 8px 10px;
+  top: -50px;
+  right: -43px;
+  font-size: 15px;
+  color: #fff;
+  font-family: "Gilroy-Semibold";
+  display: none;
+}
+.copy-icon:after {
+  content: "";
+  position: absolute;
+  background: #27ae60;
+  width: 10px;
+  height: 10px;
+  top: -22px;
+  right: 7px;
+  transform: rotate(45deg);
+  display: none;
+}
+.copy-text.active .copy-icon:after,
+.copy-text.active .copy-icon:before {
+  display: block;
 }
 .product-dropdown {
   display: flex;
@@ -860,6 +928,8 @@ input[type=number] {
   display: flex;
   margin-top: 18px;
   align-items: center;
+}
+.pr-product-buy {
   justify-content: space-between;
 }
 .product-value {
@@ -876,12 +946,24 @@ input[type=number] {
 .price, .weight {
   font-family: "Gilroy-Bold";
 }
+.buy-form {
+  display: flex; 
+  margin-left: 25px;
+}
+.pr-buy-form {
+  margin-left: 0;
+}
 .amount {
   border: 1px solid #EDD6BF;
   border-radius: 2px;
   padding: 17px 10px;
   display: flex;
   align-items: center;
+  margin-right: 10px;
+  width: 37%;
+}
+.pr-amount {
+  margin-right: 35px;
 }
 .num {
   font-size: 14px;
@@ -1186,10 +1268,7 @@ input[type=number] {
 }
 .footer {
   background:url("/images/img/banner-background.png") no-repeat center;
-}
-.footer-content {
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 .footer-logo-text {
   font-size: 16px;
@@ -1256,6 +1335,9 @@ input[type=number] {
   display: flex;
   margin-left: 52px;
 }
+.phone-num:last-child {
+  margin-left: 5px;
+}
 .phone-num {
   font-size: 14px;
   line-height: 18px;
@@ -1279,6 +1361,7 @@ input[type=number] {
 }
 .footer-line {
   border: 1px solid #EDD6BF;
+  margin-top: 49px;
 }
 .copyright {
   padding-top: 27px;
@@ -1300,4 +1383,614 @@ input[type=number] {
 .devarto-link {
   color: #27AE60;
   font-family: "Gilroy-Semibold";
+}
+
+
+/* Media */
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 992px;
+  }
+  .nav-item:not(:first-child):before {
+    margin-right: 18px;
+    margin-left: 18px;
+  }
+  .user-link {
+    max-width: 80px;
+  }
+  .cart-link {
+    margin-right: 10px;
+  }
+  .section-yellow {
+    padding-top: 90px;
+  }
+  .banner-title {
+    font-size: 56px;
+    line-height: 60px;
+  }
+  .banner-text {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  .banner-card-text {
+    font-size: 14px;
+  }
+  .banner-link {
+    margin-top: 20px;
+  }
+  .brand-title {
+    font-size: 28px;
+  }
+  .brand-card-image {
+    max-width: 100%;
+  }
+  .brand-card-title {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .brand-card-text {
+    max-width: 85%;
+    font-size: 17px;
+  }
+  .brand-icon-text {
+    font-size: 14px;
+  }
+  .promotion {
+    padding-bottom: 80px;
+  }
+  .promotion-video-img {
+    max-width: 100%;
+  }
+  .promotion-title {
+    font-size: 23px;
+    max-width: 100%;
+    line-height: 30px;
+  }
+  .advantages-title {
+    font-size: 17px;
+  }
+  .advantage-text {
+    font-size: 15px;
+    max-width: 85%;
+  }
+  .advantage:not(:first-child) {
+  margin-top: 12px;
+  }
+  .products {
+    padding-top: 20px;
+  }
+  .products-title {
+  font-size: 28px;
+  }
+  .product-card-image {
+    max-width: 100%;
+  }
+  .product-card-title {
+    font-size: 17px;
+  }
+  .business {
+    margin-top: 100px;
+  }
+  .business-image {
+    max-width: 100%;
+  }
+  .business-title {
+    font-size: 23px;
+  }
+  .business-tips {
+    margin-top: 17px;
+  }
+  .business-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .tip-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .business-tip:not(:first-child) {
+    margin-top: 15px;
+  }
+  .second-section-yellow {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .success-title {
+    font-size: 28px;
+  }
+  .success-text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .success-card-num {
+    font-size: 50px;
+  }
+  .reliability-title {
+    font-size: 28px;
+  }
+  .reliability {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .reliability-subtitle {
+    font-size: 17px;
+    max-width: 66%;
+  }
+  .logo-lg {
+    max-width: 50%;
+  }
+  .reliability-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+  }
+  .news-title {
+    font-size: 28px;
+  }
+  .news-image {
+    max-width: 100%;
+  }
+  .news-cards {
+    padding-bottom: 80px;
+  }
+  .news-text {
+    font-size: 17px;
+  }
+  .footer-information {
+    margin-left: 0;
+  }
+  .social-media {
+    margin-left: 0;
+  }
+  .footer-logo {
+    margin-left: 30px;
+  }
+  .phone-nums {
+    flex-wrap: wrap;
+  }
+  .phone-num:last-child {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 768px;
+  }
+  .user-link {
+    max-width: 40px;
+  }
+  .user-icon {
+    margin: 0;
+  }
+  .user-link-text {
+    display: none;
+  }
+  .nav-menu {
+    margin-left: -23px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+  .nav-item:not(:first-child)::before {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  .banner-title {
+    font-size: 46px;
+    line-height: 45px;
+  }
+  .banner-subtitle {
+    font-size: 24px;
+  }
+  .banner-text {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .banner-card-text {
+    font-size: 13px;
+  }
+  .banner-link {
+    width: 180px;
+  }
+  .banner-slider-image {
+    max-width: 95%;
+  }
+  .brand-card-text {
+    font-size: 15px;
+  }
+  .brand-icon-text {
+    font-size: 13px;
+  }
+  .primary-link {
+    font-size: 13px;
+  }
+  .promotion {
+    padding-bottom: 50px;
+  }
+  .advantages-title {
+    font-size: 16px;
+  }
+  .advantage-text {
+    font-size: 14px;
+  }
+  .products-title {
+    font-size: 24px;
+  }
+  .business-content {
+    margin-left: 5px;
+  }
+  .business-text {
+    font-size: 14px;
+    line-height: 20px;
+  } 
+  .tip-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .second-section-yellow {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .success {
+    margin-top: 80px;
+  }
+  .success-title {
+    font-size: 24px;
+  }
+  .success-text {
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .success-card-img {
+    margin-left: 15px;
+    flex: 0 0 40px;
+  }
+  .success-card-num {
+    font-size: 45px;
+  }
+  .reliability {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .reliability-title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .reliability-subtitle {
+    font-size: 15px;
+    max-width: 69%;
+    margin-top: 10px;
+    line-height: 24px;
+  }
+  .logo-lg {
+    max-width: 40%;
+  }
+  .business-tip-icon {
+    flex: 0 0 30px;
+  }
+  .reliability-card {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 29%;
+  }
+  .reliability-card-left .reliability-card-text {
+    margin-right: 10px;
+  }
+  .news-title {
+    font-size: 24px;
+  }
+  .news-text {
+    font-size: 15px;
+  }
+  .phone-title {
+    margin-left: 0;
+  }
+  .phone-nums {
+    margin-left: 0;
+  }
+  .phone-link {
+    margin-left: 0;
+  }
+  .bank-cards {
+    margin-left: 0;
+  }
+  .footer-logo-text {
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 10px;
+  }
+  .information::before {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .information-item {
+    margin-top: 9px;
+  }
+  .information-link {
+    font-size: 14px;
+    line-height: 10px;
+  }
+  .social-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .phone-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 576px;
+  }
+  .header {
+    height: 70px;
+  }
+  .header-fixed.active {
+    height: 70px;
+  }
+  .logo-image {
+    height: 100px;
+  }
+  .header-fixed.active .logo-image {
+    height: 68px;
+  }
+  .nav-menu {
+    visibility: hidden;
+  }
+  .link-group {
+    margin-top: 20px;
+  }
+  .user-link-text {
+    display: block;
+  }
+  .user-link {
+    max-width: 80%;
+    min-height: 35px;
+  }
+  .user-icon {
+    margin-right: 5px;
+  }
+  .cart-link {
+    margin-right: 0;
+  }
+  .banner-slider-image {
+    max-width: 100%;
+  }
+  .banner-cards {
+    display: none;
+  }
+  .banner-title {
+    font-size: 34px;
+    line-height: 25px;
+  }
+  .banner-subtitle {
+    font-size: 20px;
+  }
+  .banner-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .banner-link {
+    width: 150px;
+  }
+  .section-yellow {
+    padding-bottom: 90px;
+  }
+  .banner-link {
+    width: 150px;
+    line-height: 15px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    font-size: 12px;
+  }
+  .swiper-buttons {
+    height: 33px;
+    width: 45px;
+  }
+  .swiper-button-prev {
+    top: 3%;
+  }
+  .brand-card {
+    height: calc(100% - 20px);
+    margin-bottom: 20px;
+  }
+  .brand-title {
+    font-size: 26px;
+  }
+  .product-card-title {
+    font-size: 20px;
+  }
+  .product-buy {
+    justify-content: space-around;
+  }
+  .promotion {
+    margin-top: 70px;
+  }
+  .promotion-video {
+    margin-top: 30px;
+  }
+  .business-title {
+    font-size: 25px;
+  }
+  .reliability {
+    display: none;
+  }
+  .business-image {
+    margin-bottom: 30px;
+  }
+  .business-tip {
+    display: flex;
+    align-items: center;
+  }
+  .success-card {
+    min-height: 0;
+    max-height: 90%;
+  }
+  .success-text {
+    max-width: 70%;
+    margin-left: 20px;
+  }
+  .news {
+    padding-top: 40px;
+  }
+  .news-date {
+    margin-top: 12px;
+  }
+  .news-text {
+    margin-top: 5px;
+  }
+  .news-card {
+    margin-bottom: 30px;
+  }
+  .news-link {
+    margin-top: 10px;
+  }
+  .ft-center {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-logo {
+    margin-left: 0;
+  }
+  .footer-content {
+    padding: 0;
+  }
+  .footer-logo-link {
+    display: block;
+    text-align: center;
+  }
+  .footer-logo-text {
+    text-align: center;
+    font-size: 16px;
+  }
+  .footer-information {
+    display: flex;
+    flex-direction: column;
+  }
+  .information {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .information:before {
+    text-align: center;
+    display: block;
+    font-size: 17px;
+  }
+  .law-information {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .information-item {
+    text-align: center;
+  }
+  .information-link {
+    font-size: 16px;
+  }
+  .social-media {
+    margin-top: 20px;
+  }
+  .social-title {
+    font-size: 17px;
+  }
+  .social-media-links {
+    justify-content: center;
+  }
+  .phone {
+    margin-top: 20px;
+  }
+  .phone-nums {
+    display: flex;
+    flex-direction: column;
+  }
+  .phone-title {
+    text-align: center;
+    font-size: 17px;
+  }
+  .phone-nums {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .phone-num {
+    font-size: 16px;
+  }
+  .phone-link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bank-cards {
+    text-align: center;
+  }
+  .footer-line {
+    margin-top: 40px;
+  }
+  .copyright {
+    display: flex;
+  }
+
+
+
+
+
+
+
+	.header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header-burger span {
+    position: absolute;
+    background-color: #27AE60;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    left: 0;
+  }
+  .header-burger:before,
+  .header-burger:after {
+    content: '';
+    background-color: #27AE60;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header-burger:before {
+    top: 0;
+  }
+  .header-burger:after {
+    bottom: 0;
+  }
+  .burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 10% 50% 0 50%;
+    z-index: 3;
+  }
+  .br-nav-list {
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+  }
+  .br-nav-item {
+    margin-bottom: 20px;
+  }
+  .header-burger:hover {
+    transform: scale(1.2);
+    transition: all 0.4s ease;
+  }
 }

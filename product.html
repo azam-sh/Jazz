@@ -154,12 +154,15 @@
             <div class="pr-product-card-text"> В аромате жасминовый чай и лист чёрной смородины, во вкусе сладкая вишня, дикая слива, миндаль и оттенки цитрусов. Послевкусие продолжительное, кислотность яблочная, деликатная, средняя. Тело среднее, округлое.</div>
           </div>
           <div class="product-wrapper">
-          <form action="" class="link-form">
+          <form class="link-form">
             <span class="referral-link-title">Ваша реферальная ссылка:</span>
-            <input type="text" id="js-text" class="referral-link" readonly="readonly" value="https://columns.app/devarto-ru/valera-6f9">
-            <div class="copy-icon" id="js-copy">
+            <div class="copy-text js-copy-text">
+              <input type="text" class="referral-link js-text" readonly="readonly" value="https://columns.app/devarto-ru/valera-6f9">
+            <div class="copy-icon js-copy">
               <img src="/images/img/copy.svg" alt="Icon: copy" class="js-svg-img">              
             </div>
+            </div>
+            <!-- /.copy-text -->
           </form>
           <!-- /.product-card-content -->
           <span class="dropdown-title">Выберите вес:</span>
@@ -173,7 +176,7 @@
             </select> 
           </div>
          <!-- /.product-dropdown -->
-         <div class="product-buy">
+         <div class="product-buy pr-product-buy">
            <div class="product-value">
             <span class="value-text">Цена:</span>
             <span class="price">4 800.00 ₽</span>
@@ -184,15 +187,15 @@
             <span class="weight">250 грамм</span>
            </div>
            <!-- /.product-weight -->
-          <div class="amount">
-            <div class="minus pr"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
-            <div class="num">1</div>
-            <div class="plus pr"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
-          </div>
-          <form>
-            <a href="#" class="pr-buy-link buy-link primary-link">
+           <form class="buy-form pr-buy-form">
+            <div class="amount pr-amount">
+              <div class="minus pr"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
+              <div class="num">1</div>
+              <div class="plus pr"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
+            </div>
+            <button class="pr-buy-link buy-link primary-link">
               В корзину
-            </a>
+            </button>
           </form>
         </div>
         <!-- /.product-buy -->

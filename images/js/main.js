@@ -30,9 +30,18 @@ $(document).ready(function(){
 	}
 
 	// кнопка copy
-	$('#js-copy').on('click', function() {
-		$('#js-text').select();
-		document.exeCommand('copy');
+	let copyText = $('.js-copy-text');
+	let btn = $('.js-copy');
+	let input = $('.js-text');
+
+	btn.click(function() {
+		input.select();
+		document.execCommand('copy');
+		copyText.addClass('active');
+		window.getSelection().removeAllRanges();
+		setTimeout(function() {
+			copyText.removeClass('active');
+		}, 2500);
 	});
 	
 	// инициализация слайдера swiper js
@@ -84,12 +93,12 @@ $(document).ready(function(){
 	 // выпадающие блоки
 	 $('.js-search-btn').click(function() {
 		 $('.js-search-form').toggle(400);
-
+		 $('.js-search-arrow').toggleClass('search-arrow-active');
 		 return false;
 	 });
 	 $('.js-price-btn').click(function() {
 		$('.js-price-form').toggle(400);
-
+		$('.js-price-arrow').toggleClass('price-arrow-active');
 		return false;
 	});
 
@@ -125,4 +134,5 @@ $(document).ready(function(){
 			setRangeSlider(index, e.currentTarget.value);
 		});
 	});
+
 });

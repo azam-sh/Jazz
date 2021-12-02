@@ -11,11 +11,14 @@
   <link rel="stylesheet" href="/images/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="/images/noui-slider/nouislider.min.css">
   <link rel="stylesheet" href="/images/css/fonts.css">
+  <link rel="stylesheet" href="/images/slick-js/slick.css">
+  <link rel="stylesheet" href="/images/slick-js/slick-theme.css">
   <link rel="stylesheet" href="/images/css/main.css">
   <script src="/images/fancybox/fancybox.umd.js" defer></script>
   <script src="/images/swiper/swiper-bundle.min.js" defer></script>
   <script src="/images/jquery-ui/jquery-3.6.0.min.js" defer></script>
   <script src="/images/noui-slider/nouislider.min.js" defer></script>
+  <script src="/images/slick-js/slick.min.js" defer></script>
   <script src="/images/js/main.js" defer></script>
 </head>
 <body>
@@ -24,12 +27,12 @@
       <div class="header-fixed">
         <div class="container">
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-3">
               <a href="/" class="logo">
                 <img src="/images/img/logo.png" alt="Logo: Jazz" class="logo-image" />
               </a>
             </div>
-             <div class="col-md-8">
+             <div class="col-md-8 col-sm-3">
               <nav class="nav-menu">
                 <ul class="nav-list">
                   <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
@@ -41,21 +44,26 @@
                   <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
                 </ul>
               </nav>
-             </div>
-            <div class="col-md-2">
-              <div class="link-group">
-                <a href = "#" class="user-link primary-link">
-                  <img src="/images/img/user.svg" alt="Icon: User" class="js-svg-img">
-                  Войти
-                </a>
-                <a href = "/cart.html" class="cart-link">
-                  <img src="/images/img/cart.svg" alt="Icon: Cart" class="js-svg-img">
-                  <span class="products-num">3</span>
-                </a>
               </div>
-              <!-- /.link-group -->
-            </div>
-            <!-- /.col-md-2 -->
+              <!-- /.col-md-8 -->
+              <div class="col-md-2 col-sm-6">
+                <div class="link-group">
+                  <a href = "#" class="user-link primary-link">
+                    <img src="/images/img/user.svg" alt="Icon: User" class="js-svg-img user-icon">
+                    <span class="user-link-text">Войти</span>
+                  </a>
+                  <a href = "/cart.html" class="cart-link">
+                    <img src="/images/img/cart.svg" alt="Icon: Cart" class="js-svg-img">
+                    <span class="products-num">3</span>
+                  </a>
+                  <div class="header-burger">
+                    <span></span>
+                  </div>
+                  <!-- /.header-burger -->
+                </div>
+                <!-- /.link-group -->
+              </div>
+              <!-- /.col-md-3 -->
           </div>
         <!-- /.row -->
         </div>
@@ -70,7 +78,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="banner-content">
                       <h1 class="banner-title">Santos Coffee BR</h1>
                       <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
@@ -99,7 +107,7 @@
                     </div>
                     <!-- banner-content -->
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="banner-slider offset-2">
                       <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
                     </div>
@@ -112,7 +120,7 @@
               <!-- /.swiper-slide -->
               <div class="swiper-slide">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="banner-content">
                       <h1 class="banner-title">Santos Coffee BR</h1>
                       <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
@@ -141,7 +149,7 @@
                     </div>
                     <!-- banner-content -->
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="banner-slider offset-2">
                       <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
                     </div>
@@ -154,7 +162,7 @@
               <!-- /.swiper-slide -->
               <div class="swiper-slide">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="banner-content">
                       <h1 class="banner-title">Santos Coffee BR</h1>
                       <h2 class="banner-subtitle">Свежеобжаренный кофе</h2>
@@ -183,7 +191,7 @@
                     </div>
                     <!-- banner-content -->
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="banner-slider offset-2">
                       <img src="/images/img/banner-slider-image.png" alt="banner-slider-image" class="banner-slider-image">
                     </div>
@@ -207,8 +215,8 @@
         <!-- /.container -->
       </section>
       <!-- /.banner  -->
+      <h2 class="brand-title">Мы создаем бренды!</h2>
       <section class="brands container">
-        <h2 class="brand-title">Мы создаем бренды!</h2>
         <div class="brand-cards">
           <div class="row">
             <div class="col-md-6">
@@ -292,22 +300,22 @@
               <div class="advantages-title">Продукты европейского качества</div>
               <div class="advantages-info">
                 <div class="advantage">
-                  <img src="/images/img/advantage-1.svg" alt="Icon: andvantage-1" class="js-svg-img">
+                  <img src="/images/img/advantage-1.svg" alt="Icon: andvantage-1" class="js-svg-img advantage-icon">
                   <span class="advantage-text">Собственное производство в Европе и в Казахстане</span>
                 </div>
                 <!-- /.advantage-1 -->
                 <div class="advantage">
-                  <img src="/images/img/advantage-2.svg" alt="Icon: andvantage-2" class="js-svg-img">
+                  <img src="/images/img/advantage-2.svg" alt="Icon: andvantage-2" class="js-svg-img advantage-icon">
                   <span class="advantage-text">Каждая линейка продукции имеет свои сертификаты от ISO 9001, ISO 14001 и ISO 22000 до BRC, ECO</span>
                 </div>
                 <!-- /.advantage-2 -->
                 <div class="advantage">
-                  <img src="/images/img/advantage-3.svg" alt="Icon: andvantage-3" class="js-svg-img">
+                  <img src="/images/img/advantage-3.svg" alt="Icon: andvantage-3" class="js-svg-img advantage-icon">
                   <span class="advantage-text">Сотрудничество с лучшими производителями и поставщиками сырья (Чехия, Германия и др.) имеющие сертификацию COSMOS и ECOCERT</span>
                 </div>
                 <!-- /.advantage-3 -->
                 <div class="advantage">
-                  <img src="/images/img/advantage-4.svg" alt="Icon: andvantage-4" class="js-svg-img">
+                  <img src="/images/img/advantage-4.svg" alt="Icon: andvantage-4" class="js-svg-img advantage-icon">
                   <span class="advantage-text">Пополненяем ассортимент каждые 6 месяцев</span>
                 </div>
                 <!-- /.advantage-4 -->
@@ -319,7 +327,7 @@
           <!-- /.col-md-6 -->
           <div class="col-md-6">
             <a class="promotion-video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&t=1s" data-fancybox="video">
-              <img src="/images/img/promotion-video.png" alt="Promotion video" class="promotion-video">
+              <img src="/images/img/promotion-video.png" alt="Promotion video" class="promotion-video-img">
             </a>
             <!-- /.promotion-video -->
           </div>
@@ -332,7 +340,7 @@
       <div class="products container">
         <div class="product-cards">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-1.png" alt="Product-card-image" class="product-card-image">
@@ -351,17 +359,19 @@
                    </div>
                  <!-- /.product-dropdown -->
                  <div class="product-buy">
-                   <span class="price-text">Цена:</span>
-                   <span class="price">4 400.00 ₽</span>
-                   <div class="amount">
-                     <div class="minus"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
-                     <div class="num">1</div>
-                     <div class="plus"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
+                  <div>
+                    <span class="price-text">Цена:</span>
+                    <span class="price">4 400.00 ₽</span>
                    </div>
-                   <form>
-                    <a href="#" class="buy-link primary-link">
-                      В корзину
-                    </a>
+                   <form class="buy-form">
+                      <div class="amount">
+                        <div class="minus"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
+                        <div class="num">1</div>
+                        <div class="plus"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
+                      </div>
+                      <button class="buy-link primary-link">
+                        В корзину
+                      </button>
                    </form>
                  </div>
                  <!-- /.product-buy -->
@@ -370,8 +380,8 @@
               </div>
               <!-- /.product-card -->
             </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4">
+            <!-- /.col-md-6 col-lg-4 -->
+            <div class="col-md-6 col-lg-4">
               <div class="product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-2.png" alt="Product-card-image" class="product-card-image">
@@ -390,17 +400,19 @@
                   </div>
                  <!-- /.product-dropdown -->
                  <div class="product-buy">
-                  <span class="price-text">Цена:</span>
-                  <span class="price">4 800.00 ₽</span>
-                  <div class="amount">
-                    <div class="minus"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
-                    <div class="num">1</div>
-                    <div class="plus"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
+                  <div>
+                    <span class="price-text">Цена:</span>
+                    <span class="price">4 800.00 ₽</span>
                   </div>
-                  <form>
-                    <a href="#" class="buy-link primary-link">
+                  <form class="buy-form">
+                    <div class="amount">
+                      <div class="minus"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
+                      <div class="num">1</div>
+                      <div class="plus"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
+                    </div>
+                    <button class="buy-link primary-link">
                       В корзину
-                    </a>
+                    </button>
                   </form>
                 </div>
                 <!-- /.product-buy -->
@@ -409,8 +421,8 @@
               </div>
               <!-- /.product-card -->
             </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4">
+            <!-- /.col-md-6 col-lg-4 -->
+            <div class="col-md-6 col-lg-4">
               <div class="product-card">
                 <div class="product-card-header">
                   <img src="/images/img/product-card-image-3.png" alt="Product-card-image" class="product-card-image">
@@ -429,17 +441,19 @@
                   </div>
                  <!-- /.product-dropdown -->
                  <div class="product-buy">
-                  <span class="price-text">Цена:</span>
-                  <span class="price">9 800.00 ₽</span>
-                  <div class="amount">
-                    <div class="minus"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
-                    <div class="num">1</div>
-                    <div class="plus"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
-                  </div>
-                  <form>
-                    <a href="#" class="buy-link primary-link">
+                   <div>
+                     <span class="price-text">Цена:</span>
+                     <span class="price">9 800.00 ₽</span>
+                   </div>
+                  <form class="buy-form">
+                    <div class="amount">
+                      <div class="minus"><img src="/images/img/minus-icon.svg" alt="Icon: Minus" class="js-svg-img"></div>
+                      <div class="num">1</div>
+                      <div class="plus"><img src="/images/img/plus-icon.svg" alt="Icon: Plus" class="js-svg-img"></div>
+                    </div>
+                    <button class="buy-link primary-link">
                       В корзину
-                    </a>
+                    </button>
                   </form>
                 </div>
                 <!-- /.product-buy -->
@@ -448,7 +462,7 @@
               </div>
               <!-- /.product-card -->
             </div>
-            <!-- /.col-md-4 -->
+            <!-- /.col-md-6 col-lg-4 -->
           </div>
           <!-- /.row -->
         </div>
@@ -601,26 +615,35 @@
         <div class="news-cards">
           <div class="row">
             <div class="col-md-4">
-              <img src="/images/img/news-image-1.png" alt="News-imaage-1" class="news-image">
-              <div class="news-date">29 Ноября 2020г</div>
-              <div class="news-text">Лучшие кофейные открытия Москвы в ноябре</div>
+              <div class="news-card">
+                <img src="/images/img/news-image-1.png" alt="News-imaage-1" class="news-image">
+                <div class="news-date">29 Ноября 2020г</div>
+                <div class="news-text">Лучшие кофейные открытия Москвы в ноябре</div>
+              </div>
+              <!-- /.news-card -->
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">
-              <img src="/images/img/news-image-2.png" alt="News-imaage-2" class="news-image">
-              <div class="news-date">29 Ноября 2020г</div>
-              <div class="news-text">Интервью с Шота Битадзе: всё о грузинском фермерском чае</div>
-              <a href="#" class="news-link primary-link">Все новости</a>
+              <div class="news-card">
+                <img src="/images/img/news-image-2.png" alt="News-imaage-2" class="news-image">
+                <div class="news-date">29 Ноября 2020г</div>
+                <div class="news-text">Интервью с Шота Битадзе: всё о грузинском фермерском чае</div>
+              </div>
+              <!-- /.news-card -->
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">
-              <img src="/images/img/news-image-3.png" alt="News-imaage-3" class="news-image">
-              <div class="news-date">29 Ноября 2020г</div>
-              <div class="news-text">Объявлены Чемпионаты мира по кофе, которые состоятся на Тайване</div>
+              <div class="news-card">
+                <img src="/images/img/news-image-3.png" alt="News-imaage-3" class="news-image">
+                <div class="news-date">29 Ноября 2020г</div>
+                <div class="news-text">Объявлены Чемпионаты мира по кофе, которые состоятся на Тайване</div>
+              </div>
+              <!-- /.news-card -->
             </div>
             <!-- /.col-md-4 -->
           </div>
           <!-- /.row -->
+          <a href="#" class="news-link primary-link">Все новости</a>
         </div>
         <!-- /.news-cards -->
       </div>
@@ -629,7 +652,7 @@
     <footer class="footer">
       <div class="container footer-content">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2 ft-center">
           <div class="footer-logo">
             <a href="/" class="footer-logo-link"><img src="/images/img/logo-footer.png" alt="Logo: Jazz" class="footer-logo-image"></a>
             <div class="footer-logo-text">Jazz STORE - </br>Все лучшее людям!</div>
@@ -637,7 +660,7 @@
           <!-- /.footer-logo -->
         </div>
         <!-- /.col-md-2 -->
-        <div class="col-md-5">
+        <div class="col-md-5 ft-center">
           <div class="footer-information">
             <ul label="Информация" class="information">
               <li class="information-item"><a href="#" class="information-link">О нас</a></li>
@@ -653,7 +676,7 @@
           </div> 
         </div>
         <!-- /.col-md-5 -->
-        <div class="col-md-2">
+        <div class="col-md-2 ft-center">
             <div class="social-media">
               <div class="social-title">Социальные сети</div>
               <div class="social-media-links">
@@ -672,8 +695,8 @@
           <div class="phone">
             <div class="phone-title">Контакты</div>
             <div class="phone-nums">
-              <a href="tel: 88008989889" class="phone-num">8 800 898 98 89,</a>
-              <a href="tel: +74998989889" class="phone-num">&nbsp +7 499 989 98 89</a>
+              <a href="tel: +78008989889" class="phone-num">+7 800 898 98 89,</a>
+              <a href="tel: +74998989889" class="phone-num">+7 499 989 98 89</a>
             </div>
             <!-- /.phone-nums -->
           </div>
