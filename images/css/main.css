@@ -20,10 +20,6 @@ button {
   border: none;
   background: transparent;
 }
-.container {
-  max-width: 1200px;
-  width: 100%;
-}
 .header {
   width: 100%;
   height: 90px;
@@ -928,6 +924,7 @@ input[type=number] {
   display: flex;
   margin-top: 18px;
   align-items: center;
+  justify-content: space-between;
 }
 .pr-product-buy {
   justify-content: space-between;
@@ -960,7 +957,8 @@ input[type=number] {
   display: flex;
   align-items: center;
   margin-right: 10px;
-  width: 37%;
+  width: 100%;
+  display: none;
 }
 .pr-amount {
   margin-right: 35px;
@@ -1122,8 +1120,7 @@ input[type=number] {
   border-radius: 2px;
   display: flex;
   align-items: center;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  min-height: 120px;
   margin-top: 26px;
 }
 .reliability-card-left {
@@ -1385,13 +1382,14 @@ input[type=number] {
   font-family: "Gilroy-Semibold";
 }
 
-
 /* Media */
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1199px) {
   .container {
-    max-width: 992px;
+    max-width: 1200px;
   }
+}
+@media screen and (max-width: 1199px) {
   .nav-item:not(:first-child):before {
     margin-right: 18px;
     margin-left: 18px;
@@ -1440,7 +1438,7 @@ input[type=number] {
     padding-bottom: 80px;
   }
   .promotion-video-img {
-    max-width: 100%;
+    max-width: 125%;
   }
   .promotion-title {
     font-size: 23px;
@@ -1473,7 +1471,7 @@ input[type=number] {
     margin-top: 100px;
   }
   .business-image {
-    max-width: 100%;
+    max-width: 125%;
   }
   .business-title {
     font-size: 23px;
@@ -1500,8 +1498,13 @@ input[type=number] {
     font-size: 28px;
   }
   .success-text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 18px;
+    max-width: 70%;
+    margin-left: 15px;
+  }
+  .success-card-img {
+    margin-left: 15px;
   }
   .success-card-num {
     font-size: 50px;
@@ -1521,8 +1524,6 @@ input[type=number] {
     max-width: 50%;
   }
   .reliability-card {
-    padding-top: 20px;
-    padding-bottom: 20px;
     font-size: 15px;
   }
   .news-title {
@@ -1543,9 +1544,6 @@ input[type=number] {
   .social-media {
     margin-left: 0;
   }
-  .footer-logo {
-    margin-left: 30px;
-  }
   .phone-nums {
     flex-wrap: wrap;
   }
@@ -1554,9 +1552,6 @@ input[type=number] {
   }
 }
 @media screen and (max-width: 991px) {
-  .container {
-    max-width: 768px;
-  }
   .user-link {
     max-width: 40px;
   }
@@ -1573,8 +1568,8 @@ input[type=number] {
     font-size: 12px;
   }
   .nav-item:not(:first-child)::before {
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: 9px;
+    margin-left: 9px;
   }
   .banner-title {
     font-size: 46px;
@@ -1605,8 +1600,15 @@ input[type=number] {
   .primary-link {
     font-size: 13px;
   }
+  .swiper-buttons {
+    left: 56%;
+    bottom: 43%;
+  }
   .promotion {
     padding-bottom: 50px;
+  }
+  .promotion-video-img {
+    max-width: 135%;
   }
   .advantages-title {
     font-size: 16px;
@@ -1624,6 +1626,9 @@ input[type=number] {
     font-size: 14px;
     line-height: 20px;
   } 
+  .business-image {
+    max-width: 135%;
+  }
   .tip-text {
     font-size: 14px;
     line-height: 18px;
@@ -1722,11 +1727,7 @@ input[type=number] {
     line-height: 20px;
   }
 }
-
 @media screen and (max-width: 767px) {
-  .container {
-    max-width: 576px;
-  }
   .header {
     height: 70px;
   }
@@ -1740,7 +1741,7 @@ input[type=number] {
     height: 68px;
   }
   .nav-menu {
-    visibility: hidden;
+    display: none;
   }
   .link-group {
     margin-top: 20px;
@@ -1765,7 +1766,7 @@ input[type=number] {
     display: none;
   }
   .banner-title {
-    font-size: 34px;
+    font-size: 33px;
     line-height: 25px;
   }
   .banner-subtitle {
@@ -1802,17 +1803,23 @@ input[type=number] {
   .brand-title {
     font-size: 26px;
   }
+  .product-card-image {
+    display: block;
+  }
   .product-card-title {
     font-size: 20px;
   }
   .product-buy {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .promotion {
     margin-top: 70px;
   }
   .promotion-video {
     margin-top: 30px;
+  }
+  .promotion-video-img {
+    max-width: 100%;
   }
   .business-title {
     font-size: 25px;
@@ -1822,6 +1829,7 @@ input[type=number] {
   }
   .business-image {
     margin-bottom: 30px;
+    max-width: 100%;
   }
   .business-tip {
     display: flex;
@@ -1840,12 +1848,26 @@ input[type=number] {
   }
   .news-date {
     margin-top: 12px;
+    margin-left: 70px;
   }
   .news-text {
     margin-top: 5px;
+    margin-left: 70px;
+    max-width: 80%;
+  }
+  .news-cards {
+    padding-bottom: 80px;
   }
   .news-card {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .news-image {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .news-link {
     margin-top: 10px;
@@ -1853,6 +1875,9 @@ input[type=number] {
   .ft-center {
     display: flex;
     justify-content: center;
+  }
+  .footer {
+    background-size: cover;
   }
   .footer-logo {
     margin-left: 0;
@@ -1932,13 +1957,9 @@ input[type=number] {
   .copyright {
     display: flex;
   }
-
-
-
-
-
-
-
+  .made-by-text {
+    margin-right: 0;
+  }
 	.header-burger {
     display: block;
     position: relative;
@@ -1992,5 +2013,55 @@ input[type=number] {
   .header-burger:hover {
     transform: scale(1.2);
     transition: all 0.4s ease;
+  }
+}
+@media screen and (max-width: 576px) {
+  .user-link {
+    font-size: 12px;
+    max-width: 50%;
+    margin-right: 5px;
+  }
+  .products-num {
+    font-size: 9px;
+    line-height: 10px;
+    padding: 3px 5px;
+    top: -1px;
+    right: -1px;
+  }
+  .header-burger {
+    width: 25px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  .banner-slider {
+    display: none;
+  }
+  .swiper-buttons {
+    display: none;
+  }
+  .products {
+    padding-top: 5px;
+  }
+  .advantage-text {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .promotion {
+    margin-top: 40px;
+  }
+  .news-date {
+    margin-left: 30px;
+  }
+  .news-text {
+    margin-left: 30px;
+  }
+  .copyright {
+    flex-direction: column;
+  }
+  .copyright-text {
+    font-size: 12px;
+  }
+  .made-by-text {
+    font-size: 12px;
   }
 }
