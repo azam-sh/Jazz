@@ -465,7 +465,7 @@ input[type=number] {
   display: flex;
   flex-direction: column; 
   height: calc(100% - 20px);
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .brand-card {
   display: flex;
@@ -1440,6 +1440,9 @@ input[type=number] {
   .brand-icon-text {
     font-size: 14px;
   }
+  .catalog-card-image {
+    max-width: 100%;
+  }
   .promotion {
     padding-bottom: 80px;
   }
@@ -1610,6 +1613,23 @@ input[type=number] {
     left: 56%;
     bottom: 43%;
   }
+  .swiper-buttons.ct {
+    left: 51%;
+    bottom: 39%;
+  }
+  .sidebar-item-text {
+    font-size: 15px;
+  }
+  .catalog-card-title {
+    font-size: 22px;
+  }
+  .catalog-card-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .catalog-page-title {
+    font-size: 30px;
+  }
   .promotion {
     padding-bottom: 50px;
   }
@@ -1624,6 +1644,13 @@ input[type=number] {
   }
   .products-title {
     font-size: 24px;
+  }
+  .price-input-group {
+    flex-direction: column;
+  }
+  .product-card-header {
+    display: flex;
+    justify-content: center;
   }
   .business-content {
     margin-left: 5px;
@@ -1750,6 +1777,9 @@ input[type=number] {
   .header-fixed.active .logo-image {
     height: 68px;
   }
+  body.lock {
+    overflow: hidden;
+  }
   .header-burger {
     display: block;
     position: relative;
@@ -1803,7 +1833,7 @@ input[type=number] {
     background-color: #fff;
     margin-top: 0;
     margin-left: 0;
-    padding: 18% 50% 0 40%;
+    padding: 12% 40% 0 40%;
     z-index: 3;
   }
   .nav-menu.active {
@@ -1866,6 +1896,24 @@ input[type=number] {
   }
   .section-yellow {
     padding-bottom: 90px;
+  }
+  .sidebar {
+    margin-bottom: 30px;
+  }
+  .catalog-card-header {
+    display: flex;
+    justify-content: center;
+  }
+  .catalog-card-text {
+    max-width: 80%;
+  }
+  .price-input-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .noUi-target {
+    margin-right: auto;
+    margin-left: auto;
   }
   .banner-link {
     width: 150px;
@@ -2070,8 +2118,11 @@ input[type=number] {
     top: -1px;
     right: -1px;
   }
+  body.lock {
+    overflow: hidden;
+  }
   .nav-menu {
-    padding: 30% 50% 0 29%;
+    padding: 21% 28% 0 28%;
   }
   .nav-item {
     margin-bottom: 20px;
@@ -2096,6 +2147,13 @@ input[type=number] {
   .banner-text {
     font-size: 14px;
   }
+  .catalog-page-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .price-input {
+    padding: 0 5px;
+  }
   .swiper-buttons {
     display: none;
   }
@@ -2110,6 +2168,9 @@ input[type=number] {
   }
   .product-card-title {
     font-size: 17px;
+  }
+  .catalog-card-text {
+    max-width: 100%;
   }
   .advantage-text {
     font-size: 12px;

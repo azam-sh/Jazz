@@ -30,8 +30,9 @@ $(document).ready(function(){
 	}
 
 	// бургер-меню 
-	$('.header-burger').click(function(event) {
-		$('.header-burger, .nav-menu').toggleClass('active');
+	$('.js-burger').click(function(event) {
+		$('.js-burger, .js-nav').toggleClass('active');
+		$('body').toggleClass('lock');
 	});
 
 
