@@ -1794,7 +1794,7 @@ input[type=number] {
     bottom: 9px;
   }
   .nav-menu {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -1803,8 +1803,11 @@ input[type=number] {
     background-color: #fff;
     margin-top: 0;
     margin-left: 0;
-    padding: 22% 50% 0 40%;
+    padding: 18% 50% 0 40%;
     z-index: 3;
+  }
+  .nav-menu.active {
+    display: block;
   }
   .nav-list {
     display: flex;
@@ -2066,6 +2069,15 @@ input[type=number] {
     padding: 3px 5px;
     top: -1px;
     right: -1px;
+  }
+  .nav-menu {
+    padding: 30% 50% 0 29%;
+  }
+  .nav-item {
+    margin-bottom: 20px;
+  }
+  .nav-link {
+    font-size: 14px;
   }
   .header-burger {
     width: 25px;

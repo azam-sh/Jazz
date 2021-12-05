@@ -30,14 +30,11 @@ $(document).ready(function(){
 	}
 
 	// бургер-меню 
-	$('header-burger').click(function(event) {
+	$('.header-burger').click(function(event) {
 		$('.header-burger, .nav-menu').toggleClass('active');
 	});
 
 
-
-
-	
 	// кнопка copy
 	let copyText = $('.js-copy-text');
 	let btn = $('.js-copy');
