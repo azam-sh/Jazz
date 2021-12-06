@@ -723,7 +723,7 @@ input[type=number] {
   padding: 0 10px;
 }
 .slick-next {
-  right: 2px;
+  right: -10px;
 }
 .slick-next::before {
   content: " ";
@@ -733,7 +733,7 @@ input[type=number] {
   width: 25px;
 }
 .slick-prev {
-  left: 9px;
+  left: 5px;
 }
 .slick-prev::before {
   content: " ";
@@ -1456,6 +1456,9 @@ input[type=number] {
   .catalog-card-image {
     max-width: 100%;
   }
+  .pr-product-card-title {
+    font-size: 28px;
+  }
   .promotion {
     padding-bottom: 80px;
   }
@@ -1599,6 +1602,26 @@ input[type=number] {
     margin-right: 9px;
     margin-left: 9px;
   }
+  .pr-product-card {
+    padding-bottom: 60px;
+  }
+  .second-section-yellow.product-yellow {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .pr-buy-link {
+    width: 140px;
+  }
+  .information-text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .price-text, .price, .weight, .value-text {
+    font-size: 15px;
+  }
+  .history {
+    padding-bottom: 65px;
+  }
   .banner-title {
     font-size: 45px;
     line-height: 45px;
@@ -1664,6 +1687,25 @@ input[type=number] {
     font-size: 15px;
   }
   .condition {
+    font-size: 14px;
+  }
+  .slick-prev {
+    left: -2px;
+  }
+  .slick-next {
+    right: -13px;
+  }
+  .pr-product-card-title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .pr-product-card-text {
+    line-height: 24px;
+  }
+  .article {
+    font-size: 14px;
+  }
+  .on-stock {
     font-size: 14px;
   }
   .catalog-card-text {
@@ -1916,6 +1958,18 @@ input[type=number] {
   }
   .cart-link {
     margin-right: 0;
+  }
+  .spec-1 {
+    order: 2;
+  }
+  .spec-2 {
+    order: 1;
+  }
+  .methods-cards {
+    flex-wrap: wrap;
+  }
+  .product-wrapper {
+    margin-bottom: 30px;
   }
   .banner-slider-image {
     max-width: 95%;
@@ -2193,6 +2247,41 @@ input[type=number] {
   .catalog-page-title {
     font-size: 22px;
     margin-bottom: 30px;
+  }
+  .pr-product-card-title {
+    font-size: 21px;
+  }
+  .pr-product-card-text {
+    font-size: 14px;
+  }
+  .referral-link {
+    font-size: 11px;
+  }
+  .price {
+    font-size: 14px;
+  }
+  .price-text, .price, .weight, .value-text {
+    font-size: 14px;
+  }
+  .pr-buy-link.buy-link.primary-link {
+    width: 100px;
+  }
+  .slick-list {
+    max-width: 100%;
+  }
+  .information-title {
+    font-size: 19px;
+  }
+  .information-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .information-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .methods {
+    padding-top: 30px;
   }
   .price-input {
     padding: 0 5px;

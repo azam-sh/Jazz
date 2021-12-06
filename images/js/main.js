@@ -65,27 +65,40 @@ $(document).ready(function(){
 	});
 
 	// слайдер slick js
-	$('.img-slider').slick({
-		infinite: false,
+	$('.js-img-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		fade: true,
 		arrows: false,
-		asNavFor: '.second-slider'
+		fade: true,
+		asNavFor: '.js-second-slider'
 	});
-	$('.second-slider').slick({
-		infinite: false,
-		slidesToShow: 4,
-		slidesToSctoll: 1,
-		arrows: true,
-		asNavFor: '.img-slider',
+
+	$('.js-second-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.js-img-slider',
+		centerMode: true,
+		focusOnSelect: true,
 		responsive: [
 			{
-			breakpoint: 1200,
-			settings: {
-				slidesToShow: 3,
-			}
-		}
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
 		]
 	});
 
