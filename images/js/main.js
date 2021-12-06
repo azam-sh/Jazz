@@ -67,18 +67,26 @@ $(document).ready(function(){
 	// слайдер slick js
 	$('.img-slider').slick({
 		infinite: false,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: true,
-		arrows: true,
+		arrows: false,
 		asNavFor: '.second-slider'
 	});
 	$('.second-slider').slick({
 		infinite: false,
 		slidesToShow: 4,
 		slidesToSctoll: 1,
-		focusOnSelect: true,
-		useTransform: false,
-		asNavFor: '.img-slider'
+		arrows: true,
+		asNavFor: '.img-slider',
+		responsive: [
+			{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+			}
+		}
+		]
 	});
 
 	 // закрепление header

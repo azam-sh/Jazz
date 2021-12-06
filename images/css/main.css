@@ -707,22 +707,23 @@ input[type=number] {
 }
 .second-slider {
   margin-top: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.slick-next {
-  right: -82px;
-  top: 431px;
-  z-index: 9;
-}
-.slick-prev {
-  left: -84px;
-  top: 431px;
-  z-index: 9;
+.second-slider-item {
+  margin-right: 10px;
+  width: 0;
+  max-width: 90%;
 }
 .slick-prev.slick-disabled::before, .slick-next.slick-disabled::before {
   opacity: 1;
+}
+.slick-list {
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+}
+.slick-next {
+  right: 2px;
 }
 .slick-next::before {
   content: " ";
@@ -731,6 +732,9 @@ input[type=number] {
   height: 23px; 
   width: 25px;
 }
+.slick-prev {
+  left: 9px;
+}
 .slick-prev::before {
   content: " ";
   display: block;
@@ -738,16 +742,15 @@ input[type=number] {
   height: 23px; 
   width: 25px;
 }
-.second-slider .slick-track, .slick-slider .slick-list {
-  left: 0 !important;
-}
-.second-slider-item:not(:last-child) {
-  margin-right: 8px;
+.slick-track {
+  display: flex;
 }
 .item-wrapper {
-  padding: 18px 22px;
+  padding: 18px 0px;
   background: #FFFAF4;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
 }
 .second-slider .slick-current {
   border: 1px solid #27AE60;
@@ -963,6 +966,12 @@ input[type=number] {
 .pr-amount {
   margin-right: 35px;
 }
+.cart-amount {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 0;
+  padding: 17px 0px;
+}
 .num {
   font-size: 14px;
   line-height: 16px;
@@ -976,7 +985,7 @@ input[type=number] {
   margin-right: 7px;
 }
 .minus.pr {
-  margin-right: 22px;
+  margin-right: 0;
 }
 .plus {
   display: flex;
@@ -984,7 +993,7 @@ input[type=number] {
   margin-left: 7px;
 }
 .plus.pr {
-  margin-left: 22px;
+  margin-left: 0;
 }
 .buy-link {
   display: flex;
@@ -1437,6 +1446,10 @@ input[type=number] {
     max-width: 85%;
     font-size: 17px;
   }
+  .item-wrapper {
+    display: flex;
+    justify-content: center;
+  }
   .brand-icon-text {
     font-size: 14px;
   }
@@ -1471,6 +1484,12 @@ input[type=number] {
   font-size: 28px;
   }
   .product-card-image {
+    max-width: 100%;
+  }
+  .product-image {
+    max-width: 100%;
+  }
+  .item-img {
     max-width: 100%;
   }
   .product-card-title {
@@ -1620,8 +1639,32 @@ input[type=number] {
   .sidebar-item-text {
     font-size: 15px;
   }
+  .cart-title {
+    font-size: 26px;
+  }
+  .cart-info-title {
+    font-size: 16px;
+  }
+  .cart-price-num, .cart-price-symbol {
+    font-size: 16px;
+  }
   .catalog-card-title {
     font-size: 22px;
+  }
+  .order-price-num {
+    font-size: 16px;
+  }
+  .order-price-symbol {
+    font-size: 16px;
+  }
+  .order-amount {
+    font-size: 16px;
+  }
+  .total-box-title {
+    font-size: 15px;
+  }
+  .condition {
+    font-size: 14px;
   }
   .catalog-card-text {
     font-size: 15px;
