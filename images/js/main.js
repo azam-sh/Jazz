@@ -131,9 +131,9 @@ $(document).ready(function(){
 	});
 
 	// noUI-slider
-	let rangeSlider = document.getElementById('range-slider');
-	const input0 = document.getElementById('input-0');
-	const input1 = document.getElementById('input-1');
+	let rangeSlider = document.querySelector('.js-range-slider');
+	const input0 = document.querySelector('.js-input-0');
+	const input1 = document.querySelector('.js-input-1');
 	const inputs = [input0, input1];
 
 	noUiSlider.create(rangeSlider, {

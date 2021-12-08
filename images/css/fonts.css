@@ -3,8 +3,7 @@
   font-family: "Gilroy-Light";
   font-weight: 200; 
   font-style: normal;
-  src: url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.eot"),
-       url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.ttf"),
+  src: url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.ttf"),
        url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff"),
        url("/images/fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff2");
 }
@@ -12,8 +11,7 @@
   font-family: "Gilroy-Regular";
   font-weight: 400; 
   font-style: normal;
-  src: url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.eot"),
-       url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.ttf"),
+  src: url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.ttf"),
        url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff"),
        url("/images/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2");
 }
@@ -21,8 +19,7 @@
   font-family: "Gilroy-Medium";
   font-weight: 500; 
   font-style: normal;
-  src: url("/images/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.eot"),
-       url("/images/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.ttf"),
+  src: url("/images/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.ttf"),
        url("/images/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.woff"),
        url("/images/fonts/Gilroy/Gilroy-Medium/Gilroy-Medium.woff2");
 }
@@ -30,8 +27,7 @@
   font-family: "Gilroy-Semibold";
   font-weight: 600; 
   font-style: normal;
-  src: url("/images/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.eot"),
-       url("/images/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.ttf"),
+  src: url("/images/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.ttf"),
        url("/images/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.woff"),
        url("/images/fonts/Gilroy/Gilroy-Semibold/Gilroy-Semibold.woff2");
 }
@@ -39,8 +35,7 @@
   font-family: "Gilroy-Bold";
   font-weight: 700; 
   font-style: normal;
-  src: url("/images/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.eot"),
-       url("/images/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.ttf"),
+  src: url("/images/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.ttf"),
        url("/images/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff"),
        url("/images/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff2");
 }
@@ -48,8 +43,7 @@
   font-family: "Gilroy-Extrabold";
   font-weight: 800; 
   font-style: normal;
-  src: url("/images/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.eot"),
-       url("/images/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.ttf"),
+  src: url("/images/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.ttf"),
        url("/images/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.woff"),
        url("/images/fonts/Gilroy/Gilroy-Extrabold/Gilroy-Extrabold.woff2");
 }
@@ -59,8 +53,7 @@
   font-family: "Roboto-Light";
   font-weight: 200; 
   font-style: normal;
-  src: url("/images/fonts/Roboto/Roboto-Light/Roboto-Light.eot"),
-       url("/images/fonts/Roboto/Roboto-Light/Roboto-Light.ttf"),
+  src: url("/images/fonts/Roboto/Roboto-Light/Roboto-Light.ttf"),
        url("/images/fonts/Roboto/Roboto-Light/Roboto-Light.woff"),
        url("/images/fonts/Roboto/Roboto-Light/Roboto-Light.woff2");
 }
@@ -68,8 +61,7 @@
   font-family: "Roboto-Medium";
   font-weight: 500; 
   font-style: normal;
-  src: url("/images/fonts/Roboto/Roboto-Medium/Roboto-Medium.eot"),
-       url("/images/fonts/Roboto/Roboto-Medium/Roboto-Medium.ttf"),
+  src: url("/images/fonts/Roboto/Roboto-Medium/Roboto-Medium.ttf"),
        url("/images/fonts/Roboto/Roboto-Medium/Roboto-Medium.woff"),
        url("/images/fonts/Roboto/Roboto-Medium/Roboto-Medium.woff2");
 }
@@ -77,8 +69,7 @@
   font-family: "Roboto-Bold";
   font-weight: 700; 
   font-style: normal;
-  src: url("/images/fonts/Roboto/Roboto-Bold/Roboto-Bold.eot"),
-       url("/images/fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf"),
+  src: url("/images/fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf"),
        url("/images/fonts/Roboto/Roboto-Bold/Roboto-Bold.woff"),
        url("/images/fonts/Roboto/Roboto-Bold/Roboto-Bold.woff2");
 }

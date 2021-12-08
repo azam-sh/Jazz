@@ -470,7 +470,8 @@ input[type=number] {
 .brand-card {
   display: flex;
   flex-direction: column; 
-  height: 100%;
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
 }
 .brand-card-header {
   background: #FFFAF4;
@@ -986,6 +987,7 @@ input[type=number] {
 }
 .minus.pr {
   margin-right: 0;
+  padding: 3px;
 }
 .plus {
   display: flex;
@@ -994,6 +996,7 @@ input[type=number] {
 }
 .plus.pr {
   margin-left: 0;
+  padding: 3px;
 }
 .buy-link {
   display: flex;
@@ -1668,6 +1671,9 @@ input[type=number] {
   .cart-info-title {
     font-size: 16px;
   }
+  .cart-img-link {
+    display: block;
+  }
   .cart-price-num, .cart-price-symbol {
     font-size: 16px;
   }
@@ -1968,6 +1974,24 @@ input[type=number] {
   .methods-cards {
     flex-wrap: wrap;
   }
+  .cart-img {
+    max-width: 100%;
+  }
+  .cart-info-title {
+    font-size: 14px;
+  }
+  .cart-price-num, .cart-price-symbol {
+    font-size: 14px;
+  }
+  .cart-info-text {
+    font-size: 11px;
+  }
+  .cancel-btn {
+    width: 16px;
+  }
+  .cart-amount {
+    min-width: 100%;
+  }
   .product-wrapper {
     margin-bottom: 30px;
   }
@@ -2256,6 +2280,32 @@ input[type=number] {
   }
   .referral-link {
     font-size: 11px;
+  }
+  .cart-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .cart-info-title {
+    text-align: center;
+  }
+  .cart-info-text {
+    text-align: center;
+  }
+  .cart-amount {
+    min-width: 0;
+    max-width: 100%;
+    padding: 14px 0px;
+    margin-top: 17px;
+  }
+  .cancel-btn {
+    display: none;
+  }
+  .cart-price {
+    margin-top: 30px;
+  }
+  .total-price {
+    margin-top: 30px;
   }
   .price {
     font-size: 14px;
