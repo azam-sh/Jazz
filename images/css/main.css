@@ -2005,6 +2005,22 @@ input[type=number] {
     font-size: 33px;
     line-height: 25px;
   }
+  .order-price-symbol {
+    font-size: 14px;
+  }
+  .order-price-num {
+    font-size: 14px;
+  }
+  .table td {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .order-amount {
+    font-size: 14px;
+  }
+  .total-box-title {
+    font-size: 14px;
+  }
   .banner-subtitle {
     font-size: 20px;
   }
@@ -2329,6 +2345,19 @@ input[type=number] {
   .information-title {
     font-size: 18px;
     line-height: 24px;
+  }
+  .res-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .table td {
+    display: flex;
+    justify-content: center;
+  }
+  .condition {
+    min-width: 220%;
+    z-index: 9;
+    position: relative;
   }
   .methods {
     padding-top: 30px;
